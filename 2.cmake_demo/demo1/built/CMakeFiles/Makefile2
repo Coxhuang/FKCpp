@@ -44,10 +44,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/cox/Documents/GitHub/FKCpp/1.first_demo/demo
+CMAKE_SOURCE_DIR = /Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/demo1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/cox/Documents/GitHub/FKCpp/1.first_demo/demo/build
+CMAKE_BINARY_DIR = /Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/demo1/built
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/demo_exe.dir/clean
 CMakeFiles/demo_exe.dir/all:
 	$(MAKE) -f CMakeFiles/demo_exe.dir/build.make CMakeFiles/demo_exe.dir/depend
 	$(MAKE) -f CMakeFiles/demo_exe.dir/build.make CMakeFiles/demo_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cox/Documents/GitHub/FKCpp/1.first_demo/demo/build/CMakeFiles --progress-num=1,2 "Built target demo_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/demo1/built/CMakeFiles --progress-num=1,2 "Built target demo_exe"
 .PHONY : CMakeFiles/demo_exe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/demo_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/1.first_demo/demo/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/demo1/built/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo_exe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/1.first_demo/demo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/demo1/built/CMakeFiles 0
 .PHONY : CMakeFiles/demo_exe.dir/rule
 
 # Convenience name for target.

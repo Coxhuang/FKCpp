@@ -25,19 +25,24 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_DIR="build" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56060800-77c5-4611-98d4-bd61f731084e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.first_demo/Clion_demo/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.first_demo/Clion_demo/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.first_demo/demo/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.first_demo/demo/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/cmake_install.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,9 +81,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
-  <component name="RunManager" selected="CMake Application.Clion_demo">
+  <component name="RunManager" selected="CMake Application.demo_exe">
     <configuration name="Clion_demo" type="CMakeRunConfiguration" factoryName="Application" singleton="false" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/1.first_demo/Clion_demo" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/1.first_demo/Clion_demo/cmake-build-debug/Clion_demo" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -111,7 +116,7 @@
       <updated>1598767057378</updated>
       <workItem from="1598767058570" duration="300000" />
       <workItem from="1598767531837" duration="181000" />
-      <workItem from="1598772411368" duration="2094000" />
+      <workItem from="1598772411368" duration="4744000" />
     </task>
     <servers />
   </component>
@@ -138,9 +143,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="747" y="253" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598774452091" />
-    <state x="469" y="179" key="SettingsEditor" timestamp="1598774294681">
+    <state x="469" y="179" key="SettingsEditor" timestamp="1598785887297">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1598774294681" />
+    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1598785887297" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1598783952258">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1598783952258" />
   </component>
 </project>
