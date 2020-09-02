@@ -1,51 +1,22 @@
 #include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 
-double power(double base, int exponent)
-
-{
-
+double power(double base, int exponent){
     int result = base;
-
     int i;
-
     if (exponent == 0) {
-
         return 1;
-
     }
-
     for(i = 1; i < exponent; ++i){
-
         result = result * base;
-
     }
-
     return result;
-
 }
-
-//int main() {
-//    std::cout << "Hello, World!" << std::endl;
-//    return 0;
-//}
 
 int main(int argc, char *argv[]){
 
-    if (argc < 3){
-
-        printf("Usage: %s base exponent \n", argv[0]);
-
-        return 1;
-
-    }
-
-    double base = atof(argv[1]);
-
-    int exponent = atoi(argv[2]);
-
-    double result = power(base, exponent);
-    printf("%g ^ %d is %g\n", base, exponent, result);
+    double result = power(2, 3);
+    printf("is %g\n", result);
     return 0;
 }

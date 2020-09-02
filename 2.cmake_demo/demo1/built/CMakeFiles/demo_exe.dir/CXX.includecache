@@ -9,8 +9,8 @@
 /Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/demo1/main.cpp
 iostream
 -
-stdio.h
+cstdio
 -
-stdlib.h
+cstdlib
 -
 

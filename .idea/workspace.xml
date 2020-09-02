@@ -30,19 +30,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56060800-77c5-4611-98d4-bd61f731084e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/demo_exe.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/demo_exe.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/demo_exe.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/demo_exe.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/demo_exe.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/demo_exe" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/demo_exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
