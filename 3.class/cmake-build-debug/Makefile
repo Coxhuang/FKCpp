@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/demo1
+CMAKE_SOURCE_DIR = /Users/cox/Documents/GitHub/FKCpp/3.class
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/demo1/built
+CMAKE_BINARY_DIR = /Users/cox/Documents/GitHub/FKCpp/3.class/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/demo1/built/CMakeFiles /Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/demo1/built/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/3.class/cmake-build-debug/CMakeFiles /Users/cox/Documents/GitHub/FKCpp/3.class/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/demo1/built/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/3.class/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named demo_exe
+# Target rules for targets named 3_class
 
 # Build rule for target.
-demo_exe: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo_exe
-.PHONY : demo_exe
+3_class: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3_class
+.PHONY : 3_class
 
 # fast build rule for target.
-demo_exe/fast:
-	$(MAKE) -f CMakeFiles/demo_exe.dir/build.make CMakeFiles/demo_exe.dir/build
-.PHONY : demo_exe/fast
+3_class/fast:
+	$(MAKE) -f CMakeFiles/3_class.dir/build.make CMakeFiles/3_class.dir/build
+.PHONY : 3_class/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/demo_exe.dir/build.make CMakeFiles/demo_exe.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/3_class.dir/build.make CMakeFiles/3_class.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/demo_exe.dir/build.make CMakeFiles/demo_exe.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/3_class.dir/build.make CMakeFiles/3_class.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +147,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/demo_exe.dir/build.make CMakeFiles/demo_exe.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/3_class.dir/build.make CMakeFiles/3_class.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... demo_exe"
+	@echo "... 3_class"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -31,13 +31,10 @@
   <component name="ChangeListManager">
     <list default="true" id="56060800-77c5-4611-98d4-bd61f731084e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/demo_exe.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/demo_exe.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/demo_exe.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/demo_exe.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/demo_exe" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/demo_exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -95,8 +91,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.demo_exe" />
       <item itemvalue="CMake Application.Clion_demo" />
+      <item itemvalue="CMake Application.demo_exe" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -112,6 +108,9 @@
       <workItem from="1598767058570" duration="300000" />
       <workItem from="1598767531837" duration="181000" />
       <workItem from="1598772411368" duration="4744000" />
+      <workItem from="1599183237653" duration="391000" />
+      <workItem from="1599440779557" duration="185000" />
+      <workItem from="1599665499271" duration="2000" />
     </task>
     <servers />
   </component>
@@ -128,6 +127,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598775831622">

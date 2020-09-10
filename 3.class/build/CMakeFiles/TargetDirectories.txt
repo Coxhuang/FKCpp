@@ -1,0 +1,3 @@
+/Users/cox/Documents/GitHub/FKCpp/3.class/build/CMakeFiles/rebuild_cache.dir
+/Users/cox/Documents/GitHub/FKCpp/3.class/build/CMakeFiles/edit_cache.dir
+/Users/cox/Documents/GitHub/FKCpp/3.class/build/CMakeFiles/3_class.dir
