@@ -1,0 +1,30 @@
+//
+// Created by Cox on 2020/9/13.
+//
+
+#include <iostream>
+
+using namespace std;
+
+double power(double base, int exponent)
+{
+    double result = base;
+    int i;
+
+    if (exponent == 0) {
+        return 1;
+    }
+
+    for(i = 1; i < exponent; ++i){
+        result = result * base;
+    }
+
+    return result;
+}
+
+int main(){
+
+    double result = power(1, 0);
+    std::cout << result;
+    return 0;
+}

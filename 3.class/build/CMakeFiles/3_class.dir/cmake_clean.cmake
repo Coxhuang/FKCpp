@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "3_class"
   "3_class.pdb"
-  "CMakeFiles/3_class.dir/main.cpp.o"
+  "CMakeFiles/3_class.dir/virtual_func.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -3,4 +3,5 @@ project(3_class)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(3_class main.cpp)
+#add_executable(3_class main.cpp test.cpp)
+add_executable(3_class virtual_func.cpp)

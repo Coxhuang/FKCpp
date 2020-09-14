@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/3.class/main.cpp">
+		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/3.class/virtual_func.cpp">
 			<Option target="3_class"/>
 		</Unit>
 		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/3.class/CMakeLists.txt">
