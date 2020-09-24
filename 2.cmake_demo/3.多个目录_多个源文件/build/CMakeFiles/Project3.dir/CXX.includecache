@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/3.多个目录_多个源文件/main.cpp
+iostream
+-
+math/MathFunctions.c
+/Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/3.多个目录_多个源文件/math/MathFunctions.c
+math/MathFunctions.h
+/Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/3.多个目录_多个源文件/math/MathFunctions.h
+
+/Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/3.多个目录_多个源文件/math/MathFunctions.c
+
+/Users/cox/Documents/GitHub/FKCpp/2.cmake_demo/3.多个目录_多个源文件/math/MathFunctions.h
+
