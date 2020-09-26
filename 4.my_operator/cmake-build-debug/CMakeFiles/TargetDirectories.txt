@@ -1,0 +1,6 @@
+/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/CMakeFiles/square_exe.dir
+/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/CMakeFiles/rebuild_cache.dir
+/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/CMakeFiles/edit_cache.dir
+/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/CMakeFiles/SquareFunctions.dir

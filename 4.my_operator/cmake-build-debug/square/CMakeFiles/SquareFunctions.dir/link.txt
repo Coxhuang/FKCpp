@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libSquareFunctions.a  CMakeFiles/SquareFunctions.dir/square_func.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libSquareFunctions.a

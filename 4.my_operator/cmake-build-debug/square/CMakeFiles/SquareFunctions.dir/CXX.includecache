@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/cox/Documents/GitHub/FKCpp/4.my_operator/square/square_func.cpp
+square_func.h
+/Users/cox/Documents/GitHub/FKCpp/4.my_operator/square/square_func.h
+iostream
+-
+
+/Users/cox/Documents/GitHub/FKCpp/4.my_operator/square/square_func.h
+

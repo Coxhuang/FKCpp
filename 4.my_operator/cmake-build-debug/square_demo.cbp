@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="square_demo"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\square\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="square_exe">
+				<Option output="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 square_exe"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="square_exe/fast">
+				<Option output="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 square_exe/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SquareFunctions">
+				<Option output="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/libSquareFunctions.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/Makefile&quot;  VERBOSE=1 SquareFunctions"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SquareFunctions/fast">
+				<Option output="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/libSquareFunctions.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/Makefile&quot;  VERBOSE=1 SquareFunctions/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cox/Documents/GitHub/FKCpp/4.my_operator/cmake-build-debug/square/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/main.cpp">
+			<Option target="square_exe"/>
+		</Unit>
+		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/square/square_func.cpp">
+			<Option target="SquareFunctions"/>
+		</Unit>
+		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/square/square_func.h">
+			<Option target="SquareFunctions"/>
+		</Unit>
+		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/4.my_operator/square/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\square\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
