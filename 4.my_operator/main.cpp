@@ -8,10 +8,9 @@
 using namespace std;
 
 int main(){
-    SquareCls square_obj(10);
+    SquareCls square_obj;
     int ret = square_obj.square(2);
-    square_obj.n = 9;
-    cout << square_obj.n << ret;
+    cout << ret << endl;
     return 0;
 }
 

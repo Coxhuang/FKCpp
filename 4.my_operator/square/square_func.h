@@ -7,11 +7,8 @@
 
 class SquareCls{
 public:
-    int n ;
     int square(int a);
-    SquareCls(int a);
-private:
-    int m ;
+    SquareCls();
 };
 
 #endif //TEST_OPERATOR_SQUARE_FUNC_H

@@ -4,11 +4,13 @@
 #include "square_func.h"
 #include <iostream>
 
-int SquareCls::square(int a) {
-    return a*a;
+
+SquareCls::SquareCls() {
+    std::cout << "构造函数"  << std::endl;
 }
 
-SquareCls::SquareCls(int a) {
-    std::cout << a << std::endl;
+int SquareCls::square(int n) {
+    return n*n;
 }
+
 
