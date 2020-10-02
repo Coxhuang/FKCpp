@@ -4,13 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/cox/Documents/GitHub/FKCpp/6.boost_demo/main.cpp" "/Users/cox/Documents/GitHub/FKCpp/6.boost_demo/cmake-build-debug/CMakeFiles/6_boost_demo.dir/main.cpp.o"
+  "/Users/cox/Documents/GitHub/FKCpp/8.my_vector/main.cpp" "/Users/cox/Documents/GitHub/FKCpp/8.my_vector/cmake-build-debug/CMakeFiles/8_my_vector.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/include"
   )
 
 # Targets to which this target links.

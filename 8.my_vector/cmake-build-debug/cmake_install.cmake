@@ -1,4 +1,4 @@
-# Install script for directory: /Users/cox/Documents/GitHub/FKCpp/6.boost_demo
+# Install script for directory: /Users/cox/Documents/GitHub/FKCpp/8.my_vector
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/cox/Documents/GitHub/FKCpp/6.boost_demo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/cox/Documents/GitHub/FKCpp/8.my_vector/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

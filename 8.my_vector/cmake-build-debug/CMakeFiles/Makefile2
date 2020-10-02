@@ -64,16 +64,16 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/cox/Documents/GitHub/FKCpp/6.boost_demo
+CMAKE_SOURCE_DIR = /Users/cox/Documents/GitHub/FKCpp/8.my_vector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/cox/Documents/GitHub/FKCpp/6.boost_demo/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/cox/Documents/GitHub/FKCpp/8.my_vector/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/6_boost_demo.dir/all
+all: CMakeFiles/8_my_vector.dir/all
 
 .PHONY : all
 
@@ -83,36 +83,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/6_boost_demo.dir/clean
+clean: CMakeFiles/8_my_vector.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/6_boost_demo.dir
+# Target rules for target CMakeFiles/8_my_vector.dir
 
 # All Build rule for target.
-CMakeFiles/6_boost_demo.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/6_boost_demo.dir/build.make CMakeFiles/6_boost_demo.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/6_boost_demo.dir/build.make CMakeFiles/6_boost_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cox/Documents/GitHub/FKCpp/6.boost_demo/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target 6_boost_demo"
-.PHONY : CMakeFiles/6_boost_demo.dir/all
+CMakeFiles/8_my_vector.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/8_my_vector.dir/build.make CMakeFiles/8_my_vector.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/8_my_vector.dir/build.make CMakeFiles/8_my_vector.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cox/Documents/GitHub/FKCpp/8.my_vector/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target 8_my_vector"
+.PHONY : CMakeFiles/8_my_vector.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/6_boost_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/6.boost_demo/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/6_boost_demo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/6.boost_demo/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/6_boost_demo.dir/rule
+CMakeFiles/8_my_vector.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/8.my_vector/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/8_my_vector.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/8.my_vector/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/8_my_vector.dir/rule
 
 # Convenience name for target.
-6_boost_demo: CMakeFiles/6_boost_demo.dir/rule
+8_my_vector: CMakeFiles/8_my_vector.dir/rule
 
-.PHONY : 6_boost_demo
+.PHONY : 8_my_vector
 
 # clean rule for target.
-CMakeFiles/6_boost_demo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/6_boost_demo.dir/build.make CMakeFiles/6_boost_demo.dir/clean
-.PHONY : CMakeFiles/6_boost_demo.dir/clean
+CMakeFiles/8_my_vector.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/8_my_vector.dir/build.make CMakeFiles/8_my_vector.dir/clean
+.PHONY : CMakeFiles/8_my_vector.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
