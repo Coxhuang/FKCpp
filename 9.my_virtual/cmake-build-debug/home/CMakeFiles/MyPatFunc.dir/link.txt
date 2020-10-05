@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libMyPatFunc.a  CMakeFiles/MyPatFunc.dir/pat.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libMyPatFunc.a
