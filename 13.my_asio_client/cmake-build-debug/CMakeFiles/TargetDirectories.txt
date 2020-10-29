@@ -1,0 +1,3 @@
+/Users/cox/work/cpp/FKCpp/13.my_asio_client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/cox/work/cpp/FKCpp/13.my_asio_client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/cox/work/cpp/FKCpp/13.my_asio_client/cmake-build-debug/CMakeFiles/13_my_asio_client.dir
