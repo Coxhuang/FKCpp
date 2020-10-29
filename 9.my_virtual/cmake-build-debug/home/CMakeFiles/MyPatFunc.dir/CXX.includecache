@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/cox/Documents/GitHub/FKCpp/9.my_virtual/home/pat.cpp
+pat.h
+/Users/cox/Documents/GitHub/FKCpp/9.my_virtual/home/pat.h
+iostream
+-
+
+/Users/cox/Documents/GitHub/FKCpp/9.my_virtual/home/pat.h
+

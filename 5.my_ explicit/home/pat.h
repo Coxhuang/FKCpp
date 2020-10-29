@@ -11,9 +11,11 @@ class MyPat{
 public:
     int age;
     int get_name(std::string name);
+    MyPat() = default;
     MyPat(int a);
     explicit MyPat(const char *p);
     MyPat(const MyPat &obj);
+    ~MyPat();
 };
 
 #endif //INC_5_MY__EXPLICIT_PAT_H

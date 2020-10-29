@@ -1,0 +1,3 @@
+/Users/cox/Documents/GitHub/FKCpp/12.串口/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/cox/Documents/GitHub/FKCpp/12.串口/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/cox/Documents/GitHub/FKCpp/12.串口/cmake-build-debug/CMakeFiles/12_.dir

@@ -15,14 +15,17 @@ int MyPat::get_name(std::string name) {
 //}
 
 MyPat::MyPat(int a) {
-    std::cout << "构造函数 a" << a << std::endl;
+    std::cout << "构造函数 a:" << a << std::endl;
 }
 
 MyPat::MyPat(const char *p) {
-    std::cout << "构造函数 p" << *p << std::endl;
+    std::cout << "构造函数 p:" << *p << std::endl;
 }
 
-MyPat::MyPat(const MyPat &obj) {
+MyPat::MyPat(const MyPat& obj) {
     std::cout <<  "拷贝构造函数" << std::endl;
+}
 
+MyPat::~MyPat() {
+    std::cout <<  "析构函数" << std::endl;
 }
