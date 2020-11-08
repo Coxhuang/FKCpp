@@ -5,13 +5,15 @@ import sys
 import re
 import pprint
 import binascii
+from functools import reduce
+
 
 def PrintUsage():
-	print """
+	print("""
 Parses cpp file(s) containing an HSM and outputs dot format text that can be used to render it.
 	
 Usage: {} <filespec>
-	""".format(os.path.basename(sys.argv[0]))
+	""".format(os.path.basename(sys.argv[0])))
 
 DOT_LEFT_RIGHT = False
 DOT_USE_COLOR = True

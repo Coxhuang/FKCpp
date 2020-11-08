@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/cox/Documents/GitHub/FKCpp/Tools/utils/thread/thread.cc
+thread.h
+/Users/cox/Documents/GitHub/FKCpp/Tools/utils/thread/thread.h
+
+/Users/cox/Documents/GitHub/FKCpp/Tools/utils/thread/thread.h
+iostream
+-
+

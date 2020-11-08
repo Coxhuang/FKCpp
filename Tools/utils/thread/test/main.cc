@@ -7,16 +7,16 @@
  * Written by Huang Minhang <huangminhang@trunk.tech>, 2020/11/7 5:03 下午
  */
 #include <iostream>
-#include "thread.h"
+#include "../thread.h"
 
 
 
 int main() {
-    std::cout << "Hello, Thread!" << std::endl;
 
-    trunk::thread::TrunkThread thread_instance;
-
-    std::cout << trunk::thread::a;
+    trunk::thread::TrunkThread& instance1 = trunk::thread::TrunkThread::get_instance();
+    trunk::thread::TrunkThread& instance2 = trunk::thread::TrunkThread::get_instance();
+    instance1.test_add_a(); // output: 1
+    instance2.test_add_a(); // output: 2
 
     return 0;
 }

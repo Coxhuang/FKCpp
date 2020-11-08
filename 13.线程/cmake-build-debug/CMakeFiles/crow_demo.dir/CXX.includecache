@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/cox/Documents/GitHub/FKCpp/13.线程/ThreadPool.h
+vector
+-
+queue
+-
+memory
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+future
+-
+functional
+-
+stdexcept
+-
+
+/Users/cox/Documents/GitHub/FKCpp/13.线程/main.cpp
+iostream
+-
+thread
+-
+mutex
+-
+ThreadPool.h
+/Users/cox/Documents/GitHub/FKCpp/13.线程/ThreadPool.h
+

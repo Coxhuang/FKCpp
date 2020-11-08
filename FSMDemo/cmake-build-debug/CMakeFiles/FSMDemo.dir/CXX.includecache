@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/cox/Documents/GitHub/FKCpp/FSMDemo/hsm/include/hsm.h
+cstdarg
+-
+functional
+-
+memory
+-
+vector
+-
+map
+-
+cassert
+-
+cstdio
+-
+cstring
+-
+typeinfo
+-
+
+/Users/cox/Documents/GitHub/FKCpp/FSMDemo/main.cpp
+tbs_hsm.h
+/Users/cox/Documents/GitHub/FKCpp/FSMDemo/tbs_hsm.h
+
+/Users/cox/Documents/GitHub/FKCpp/FSMDemo/tbs_hsm.h
+hsm/include/hsm.h
+/Users/cox/Documents/GitHub/FKCpp/FSMDemo/hsm/include/hsm.h
+cstdio
+-
+iostream
+-
+

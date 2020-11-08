@@ -6,15 +6,15 @@ import tempfile
 import platform
 
 def PrintUsage():
-	print """
+	print("""
 Plots an HSM defined in cpp file(s) via hsmToDot -> dot -> default image viewer
 Requires GraphViz (Windows: https://graphviz.gitlab.io/_pages/Download/Download_windows.html)
 
 Usage: {} <filespec>
-	""".format(os.path.basename(sys.argv[0]))
+	""".format(os.path.basename(sys.argv[0])))
 	
 def GetScriptPath():
-    return os.path.dirname(os.path.realpath(sys.argv[0]))
+	return os.path.dirname(os.path.realpath(sys.argv[0]))
 	
 def ExecCommand(command):
 	print('[Exec] ' + command)
