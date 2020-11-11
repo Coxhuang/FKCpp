@@ -23,18 +23,19 @@ public:
 public:
     void update();
     std::string get_state() const;
-    Transition goto_inner_state(); // 跳转到Work内部指定状态
+    Transition goto_inner_state() const; // 跳转到Work内部指定状态
 
 public: // event
-    void set_task_event();
-    void cancel_task_event();
-    void truck_lock_event();
-    void truck_unlock_event();
-    void truck_run_event();
-    void truck_stop_event();
-    void truck_guide_stop_event();
-    void truck_calibrate_event();
-    void truck_arrived_event();
+    void event_set_task();
+    void event_lock();
+    void event_lock_recover();
+    void event_error();
+    void event_error_recover();
+    void event_start_up();
+    void event_stop();
+    void event_stop_recover();
+    void event_arrived();
+    void event_run();
 
 private:
     friend struct TBSHSMStates;
@@ -42,17 +43,26 @@ private:
 
 public:
     std::string current_state = "Idle"; // 当前状态机的状态
-    std::string current_inner_state = "TargetSet"; // 当前状态机内部的状态
+    std::string current_inner_state = "Work"; // 当前状态机内部的状态
 
 public:
-    bool signal_set_task; // 任务: true:下发任务 false: _
-    bool signal_cancel_task; // 取消: true:取消任务 false: _
-    bool signal_lock; // 锁: true:加锁 false:解锁
-    bool signal_run; //
-    bool signal_stop; //
-    bool signal_guide_stop; //
-    bool signal_calibrate; //
-    bool signal_arrived; //
+    bool signal_set_task{false}; // 任务: true:下发任务 false: _
+
+    bool signal_lock{false}; // 锁车: true:锁车 false: _
+    bool signal_lock_recover{false}; // 锁车恢复: true:锁车恢复 false: _
+
+    bool signal_error{false}; // 错误: true:错误 false: _
+    bool signal_error_recover{false}; // 错误恢复: true:错误恢复 false: _
+
+    bool signal_start_up{false}; // 开始: true:开始 false: _
+
+    bool signal_stop{false}; // 停车: true:停车 false: _
+    bool signal_stop_recover{false}; // 停车恢复: true:恢复 false: _
+
+    bool signal_arrived{false}; // 到达终点: true:到达 false: _
+
+    bool signal_run{false}; // 继续运行: true:运行 false: _
+
 };
 
 
@@ -64,7 +74,9 @@ struct TbsHsmStates {
     struct Idle : BaseState {
 
         virtual void OnEnter() {
-            Owner().current_state = "Idle";
+            Owner().current_state = "Idle"; // 初始值
+            Owner().current_inner_state = "Work"; // 初始值
+            std::cout << "当前状态: " << Owner().current_state << std::endl;
         }
 
         virtual void OnExit() {
@@ -72,12 +84,11 @@ struct TbsHsmStates {
         }
 
         virtual Transition GetTransition() {
-            if (Owner().signal_set_task){ // 下发任务
+            if (Owner().signal_set_task){
                 return SiblingTransition<Work>();
             } else{
                 return NoTransition();
             }
-
         }
     };
 
@@ -85,53 +96,41 @@ struct TbsHsmStates {
 
         virtual void OnEnter() {
             Owner().current_state = "Work";
+            std::cout << "当前状态: " << Owner().current_state << std::endl;
         }
         virtual void Update(){
         }
 
         virtual Transition GetTransition() {
-            if (Owner().signal_cancel_task){ // 取消任务
-                return SiblingTransition<Idle>(); // 取消任务-> 空闲状态
-            } else{
-                if (Owner().signal_lock){ // 锁车
-                    return SiblingTransition<Locked>(); // 加锁-> 锁车状态
-                } else{
-                    return Owner().goto_inner_state();
-                }
-            }
-        }
-    };
-
-    struct TargetSet : BaseState {
-
-        virtual void OnEnter() {
-            Owner().current_inner_state = "TargetSet";
-            std::cout << "当前内部状态: Work_" << Owner().current_inner_state << std::endl;
-        }
-        virtual void Update(){
-        }
-
-        virtual Transition GetTransition() {
-            if (Owner().signal_run){
-                return InnerTransition<Driving>();
-            } else{
+            if (Owner().signal_set_task){ // 工作状态接收新的任务
+                Owner().current_inner_state = "Work"; // 内部状态跳到 Work
                 return NoTransition();
+            } else if (Owner().signal_lock){
+                return SiblingTransition<Locked>();
+            } else if (Owner().signal_error){
+                return SiblingTransition<Error>();
+            } else if (Owner().signal_start_up){
+                return InnerEntryTransition<Runing>(); // 外层状态跳转至内层状态: InnerEntryTransition
+            } else{
+                return Owner().goto_inner_state();
             }
         }
     };
 
-    struct Driving : BaseState {
+    struct Runing : BaseState {
 
         virtual void OnEnter() {
-            Owner().current_inner_state = "Driving";
+            Owner().current_inner_state = "Runing";
             std::cout << "当前内部状态: Work_" << Owner().current_inner_state << std::endl;
         }
         virtual void Update(){
         }
 
         virtual Transition GetTransition() {
-            if (Owner().signal_stop) {  // 停车
-                return InnerTransition<Stop>();
+            if (Owner().signal_stop){
+                return InnerTransition<Stop>(); // 内层状态跳转: InnerTransition
+            } else if (Owner().signal_arrived){
+                return InnerTransition<Arrived>(); // 内层状态跳转: InnerTransition
             } else{
                 return NoTransition();
             }
@@ -148,48 +147,8 @@ struct TbsHsmStates {
         }
 
         virtual Transition GetTransition() {
-            if (Owner().signal_guide_stop){ // 引导停车
-                return InnerTransition<GuideStop>();
-            } else if (Owner().signal_calibrate){ // 对位
-                return InnerTransition<Calibrate>();
-            } else if (Owner().signal_arrived){ // 到达
-                return InnerTransition<Arrived>();
-            } else{
-                return NoTransition();
-            }
-        }
-    };
-
-    struct GuideStop : BaseState {
-
-        virtual void OnEnter() {
-            Owner().current_inner_state = "GuideStop";
-            std::cout << "当前内部状态: Work_" << Owner().current_inner_state << std::endl;
-        }
-        virtual void Update(){
-        }
-
-        virtual Transition GetTransition() {
-            if (Owner().signal_calibrate){ // 对位
-                return InnerTransition<Calibrate>();
-            } else{
-                return NoTransition();
-            }
-        }
-    };
-
-    struct Calibrate : BaseState {
-
-        virtual void OnEnter() {
-            Owner().current_inner_state = "Calibrate";
-            std::cout << "当前内部状态: Work_" << Owner().current_inner_state << std::endl;
-        }
-        virtual void Update(){
-        }
-
-        virtual Transition GetTransition() {
-            if (Owner().signal_arrived){ // 到达
-                return InnerTransition<Arrived>();
+            if (Owner().signal_stop_recover){
+                return InnerTransition<Runing>(); // 内层状态跳转: InnerTransition
             } else{
                 return NoTransition();
             }
@@ -206,7 +165,11 @@ struct TbsHsmStates {
         }
 
         virtual Transition GetTransition() {
-            return NoTransition();
+            if (Owner().signal_run){
+                return InnerTransition<Runing>(); // 内层状态跳转: InnerTransition
+            } else{
+                return NoTransition();
+            }
         }
     };
 
@@ -218,8 +181,24 @@ struct TbsHsmStates {
         virtual void Update(){
         }
         virtual Transition GetTransition() {
-            if (!Owner().signal_lock){  // 解锁
+            if (Owner().signal_lock_recover){ // 解锁
                 return SiblingTransition<Work>();
+            } else{
+                return NoTransition();
+            }
+        }
+    };
+
+    struct Error : BaseState {
+
+        virtual void OnEnter() {
+            Owner().current_state = "Error";
+            std::cout << "当前状态: " << Owner().current_state << std::endl;
+        }
+
+        virtual Transition GetTransition() {
+            if (Owner().signal_error_recover){ // 退出error
+                return SiblingTransition<Idle>();
             } else{
                 return NoTransition();
             }

@@ -73,40 +73,18 @@ CMAKE_BINARY_DIR = /Users/cox/Documents/GitHub/FKCpp/Tools/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/Tools.dir/all
-all: utils/thread/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: utils/thread/preinstall
+preinstall:
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Tools.dir/clean
-clean: utils/thread/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory utils/thread
-
-# Recursive "all" directory target.
-utils/thread/all: utils/thread/CMakeFiles/tthread.dir/all
-utils/thread/all: utils/thread/CMakeFiles/threadlibrary.dir/all
-
-.PHONY : utils/thread/all
-
-# Recursive "preinstall" directory target.
-utils/thread/preinstall:
-
-.PHONY : utils/thread/preinstall
-
-# Recursive "clean" directory target.
-utils/thread/clean: utils/thread/CMakeFiles/tthread.dir/clean
-utils/thread/clean: utils/thread/CMakeFiles/threadlibrary.dir/clean
-
-.PHONY : utils/thread/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Tools.dir
@@ -134,60 +112,6 @@ Tools: CMakeFiles/Tools.dir/rule
 CMakeFiles/Tools.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tools.dir/build.make CMakeFiles/Tools.dir/clean
 .PHONY : CMakeFiles/Tools.dir/clean
-
-#=============================================================================
-# Target rules for target utils/thread/CMakeFiles/tthread.dir
-
-# All Build rule for target.
-utils/thread/CMakeFiles/tthread.dir/all: utils/thread/CMakeFiles/threadlibrary.dir/all
-	$(MAKE) $(MAKESILENT) -f utils/thread/CMakeFiles/tthread.dir/build.make utils/thread/CMakeFiles/tthread.dir/depend
-	$(MAKE) $(MAKESILENT) -f utils/thread/CMakeFiles/tthread.dir/build.make utils/thread/CMakeFiles/tthread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cox/Documents/GitHub/FKCpp/Tools/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target tthread"
-.PHONY : utils/thread/CMakeFiles/tthread.dir/all
-
-# Build rule for subdir invocation for target.
-utils/thread/CMakeFiles/tthread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/Tools/cmake-build-debug/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils/thread/CMakeFiles/tthread.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/Tools/cmake-build-debug/CMakeFiles 0
-.PHONY : utils/thread/CMakeFiles/tthread.dir/rule
-
-# Convenience name for target.
-tthread: utils/thread/CMakeFiles/tthread.dir/rule
-
-.PHONY : tthread
-
-# clean rule for target.
-utils/thread/CMakeFiles/tthread.dir/clean:
-	$(MAKE) $(MAKESILENT) -f utils/thread/CMakeFiles/tthread.dir/build.make utils/thread/CMakeFiles/tthread.dir/clean
-.PHONY : utils/thread/CMakeFiles/tthread.dir/clean
-
-#=============================================================================
-# Target rules for target utils/thread/CMakeFiles/threadlibrary.dir
-
-# All Build rule for target.
-utils/thread/CMakeFiles/threadlibrary.dir/all:
-	$(MAKE) $(MAKESILENT) -f utils/thread/CMakeFiles/threadlibrary.dir/build.make utils/thread/CMakeFiles/threadlibrary.dir/depend
-	$(MAKE) $(MAKESILENT) -f utils/thread/CMakeFiles/threadlibrary.dir/build.make utils/thread/CMakeFiles/threadlibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cox/Documents/GitHub/FKCpp/Tools/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target threadlibrary"
-.PHONY : utils/thread/CMakeFiles/threadlibrary.dir/all
-
-# Build rule for subdir invocation for target.
-utils/thread/CMakeFiles/threadlibrary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/Tools/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils/thread/CMakeFiles/threadlibrary.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/Tools/cmake-build-debug/CMakeFiles 0
-.PHONY : utils/thread/CMakeFiles/threadlibrary.dir/rule
-
-# Convenience name for target.
-threadlibrary: utils/thread/CMakeFiles/threadlibrary.dir/rule
-
-.PHONY : threadlibrary
-
-# clean rule for target.
-utils/thread/CMakeFiles/threadlibrary.dir/clean:
-	$(MAKE) $(MAKESILENT) -f utils/thread/CMakeFiles/threadlibrary.dir/build.make utils/thread/CMakeFiles/threadlibrary.dir/clean
-.PHONY : utils/thread/CMakeFiles/threadlibrary.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

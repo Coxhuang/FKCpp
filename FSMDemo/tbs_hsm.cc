@@ -8,12 +8,13 @@
  */
 #include "tbs_hsm.h"
 
-// TbsHsm
-TbsHsm::TbsHsm() : signal_lock(false) {
+TbsHsm::TbsHsm() {
     state_machine_.Initialize<TbsHsmStates::Idle>(this); // 初始状态: Idle
     std::cout << "当前状态: " << current_state << std::endl;
     state_machine_.SetDebugInfo("TbsHsmDemo", TraceLevel::Basic);
 }
+
+// TbsHsm
 
 void TbsHsm::update() {
     state_machine_.ProcessStateTransitions();
@@ -25,92 +26,81 @@ std::string TbsHsm::get_state() const {
     return current_state;
 }
 
-void TbsHsm::set_task_event() {
-    signal_set_task = true; // 设置任务
-    std::cout << "触发任务事件 ";
-    update(); // 更新
+Transition TbsHsm::goto_inner_state() const {
+
+    if( current_inner_state == "Runing" ){
+        return InnerEntryTransition<TbsHsmStates::Runing>();
+    } else if( current_inner_state == "Stop" ){
+        return InnerEntryTransition<TbsHsmStates::Stop>();
+    } else if( current_inner_state == "Arrived" ){
+        return InnerEntryTransition<TbsHsmStates::Arrived>();
+    } else{
+        return NoTransition();
+    }
+}
+
+void TbsHsm::event_set_task() {
+    signal_set_task = true;
+    update();
     signal_set_task = false;
 }
 
-void TbsHsm::cancel_task_event() {
-    signal_cancel_task = true; // 取消任务
-    std::cout << "触发取消事件 ";
-    update(); // 更新
-    signal_cancel_task = false;
+void TbsHsm::event_lock() {
+    signal_lock = true;
+    update();
+    signal_lock = false;
 }
 
-void TbsHsm::truck_lock_event() {
-    signal_lock = true; // 加锁
-    std::cout << "触发锁车事件 ";
-    update(); // 更新
+void TbsHsm::event_lock_recover() {
+    signal_lock_recover = true;
+    update();
+    signal_lock_recover = false;
 }
 
-void TbsHsm::truck_unlock_event() {
-    signal_lock = false; // 解锁
-    std::cout << "触发解锁事件 ";
-    update(); // 更新
+void TbsHsm::event_error() {
+    signal_error = true;
+    update();
+    signal_error = false;
 }
 
-void TbsHsm::truck_run_event() {
-    signal_run = true;
-    std::cout << "触发开始事件 ";
-    update(); // 更新
-    signal_run = false;
+void TbsHsm::event_error_recover() {
+    signal_error_recover = true;
+    update();
+    signal_error_recover = false;
 }
 
-void TbsHsm::truck_stop_event() {
-    signal_stop = true; // 停车
-    std::cout << "触发停车事件 ";
-    update(); // 更新
+void TbsHsm::event_start_up() {
+    signal_start_up = true;
+    update();
+    signal_start_up = false;
 }
 
-void TbsHsm::truck_guide_stop_event() {
-    signal_guide_stop = true; // 引导停车
-    std::cout << "触发引导停车事件 ";
-    update(); // 更新
-    signal_guide_stop = false;
+void TbsHsm::event_stop() {
+    signal_stop = true;
+    update();
+    signal_stop = false;
 }
 
-void TbsHsm::truck_calibrate_event() {
-    signal_calibrate = true; // 对位
-    std::cout << "触发对位事件 ";
-    update(); // 更新
-    signal_calibrate = false;
+void TbsHsm::event_stop_recover() {
+    signal_stop_recover = true;
+    update();
+    signal_stop_recover = false;
 }
 
-void TbsHsm::truck_arrived_event() {
-    signal_arrived = true; // 到达
-    std::cout << "触发到达事件 ";
-    update(); // 更新
+void TbsHsm::event_arrived() {
+    signal_arrived = true;
+    update();
     signal_arrived = false;
 }
 
-Transition TbsHsm::goto_inner_state() {
-
-    if( current_inner_state == "TargetSet" ){
-        return InnerEntryTransition<TbsHsmStates::TargetSet>();
-    }
-    else if( current_inner_state == "Driving" ){
-        return InnerEntryTransition<TbsHsmStates::Driving>();
-    }
-    else if( current_inner_state == "Stop" ){
-        return InnerEntryTransition<TbsHsmStates::Stop>();
-    }
-    else if( current_inner_state == "GuideStop" ){
-        return InnerEntryTransition<TbsHsmStates::GuideStop>();
-    }
-    else if( current_inner_state == "Calibrate" ){
-        return InnerEntryTransition<TbsHsmStates::Calibrate>();
-    }
-    else if( current_inner_state == "Arrived" ){
-        return InnerEntryTransition<TbsHsmStates::Arrived>();
-    }
-    else{
-        std::cout << "强制跳转 异常" << std::endl;
-        return InnerEntryTransition<TbsHsmStates::TargetSet>();
-    }
-
+void TbsHsm::event_run() {
+    signal_run = true;
+    update();
+    signal_run = false;
 }
+
+
+
 
 
 

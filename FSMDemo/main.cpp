@@ -2,15 +2,15 @@
 
 int main() {
     TbsHsm tbshsm_instance;
-    tbshsm_instance.set_task_event();
-    tbshsm_instance.truck_run_event();
-    tbshsm_instance.truck_lock_event();
-    tbshsm_instance.truck_unlock_event();
-    tbshsm_instance.truck_stop_event();
-    tbshsm_instance.truck_lock_event();
-    tbshsm_instance.truck_unlock_event();
-    tbshsm_instance.truck_guide_stop_event();
-    tbshsm_instance.truck_calibrate_event();
-    tbshsm_instance.truck_arrived_event();
+    tbshsm_instance.event_set_task();
+    tbshsm_instance.event_lock();
+    tbshsm_instance.event_lock_recover();
+    tbshsm_instance.event_error();
+    tbshsm_instance.event_error_recover();
+    tbshsm_instance.event_set_task();
+    tbshsm_instance.event_start_up();
+    tbshsm_instance.event_stop();
+    tbshsm_instance.event_lock();
+    tbshsm_instance.event_lock_recover();
 }
 

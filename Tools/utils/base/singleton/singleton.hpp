@@ -31,6 +31,7 @@ class Singleton {
 public:
     static T &get_instance() noexcept(std::is_nothrow_constructible<T>::value) {
         static T instance{token()};
+//        static T instance;
         return instance;
     }
 

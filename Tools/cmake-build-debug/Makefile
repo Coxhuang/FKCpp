@@ -142,32 +142,6 @@ Tools/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tools.dir/build.make CMakeFiles/Tools.dir/build
 .PHONY : Tools/fast
 
-#=============================================================================
-# Target rules for targets named tthread
-
-# Build rule for target.
-tthread: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tthread
-.PHONY : tthread
-
-# fast build rule for target.
-tthread/fast:
-	$(MAKE) $(MAKESILENT) -f utils/thread/CMakeFiles/tthread.dir/build.make utils/thread/CMakeFiles/tthread.dir/build
-.PHONY : tthread/fast
-
-#=============================================================================
-# Target rules for targets named threadlibrary
-
-# Build rule for target.
-threadlibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 threadlibrary
-.PHONY : threadlibrary
-
-# fast build rule for target.
-threadlibrary/fast:
-	$(MAKE) $(MAKESILENT) -f utils/thread/CMakeFiles/threadlibrary.dir/build.make utils/thread/CMakeFiles/threadlibrary.dir/build
-.PHONY : threadlibrary/fast
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -204,8 +178,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Tools"
-	@echo "... threadlibrary"
-	@echo "... tthread"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
