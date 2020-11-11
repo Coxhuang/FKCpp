@@ -7,7 +7,7 @@
  * Written by Huang Minhang <huangminhang@trunk.tech>, 2020/11/7 5:03 下午
  */
 #include <iostream>
-#include "../thread.h"
+#include "../thread.hpp"
 
 
 

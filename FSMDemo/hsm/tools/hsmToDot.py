@@ -701,7 +701,7 @@ def PrintDotFile(hsm):
 				attributes = GetAttributesForChildPositioningEdge(transition)
 				print("  %s -> %s %s;" % (state.Name, hsm.GetStateByNameOrAlias(child.Name).Name, attributes))
 
-	print ("}")
+	print("}")
 
 
 def main(argv = None):
