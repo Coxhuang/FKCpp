@@ -143,6 +143,33 @@ boost_statechart_demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_statechart_demo.dir/build.make CMakeFiles/boost_statechart_demo.dir/build
 .PHONY : boost_statechart_demo/fast
 
+demo.o: demo.cc.o
+
+.PHONY : demo.o
+
+# target to build an object file
+demo.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_statechart_demo.dir/build.make CMakeFiles/boost_statechart_demo.dir/demo.cc.o
+.PHONY : demo.cc.o
+
+demo.i: demo.cc.i
+
+.PHONY : demo.i
+
+# target to preprocess a source file
+demo.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_statechart_demo.dir/build.make CMakeFiles/boost_statechart_demo.dir/demo.cc.i
+.PHONY : demo.cc.i
+
+demo.s: demo.cc.s
+
+.PHONY : demo.s
+
+# target to generate assembly for a file
+demo.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_statechart_demo.dir/build.make CMakeFiles/boost_statechart_demo.dir/demo.cc.s
+.PHONY : demo.cc.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... boost_statechart_demo"
+	@echo "... demo.o"
+	@echo "... demo.i"
+	@echo "... demo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

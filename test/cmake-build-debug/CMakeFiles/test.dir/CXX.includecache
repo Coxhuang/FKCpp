@@ -6,9 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/Users/cox/Documents/GitHub/FKCpp/test/cache.hpp
+iostream
+-
+map
+-
+
 /Users/cox/Documents/GitHub/FKCpp/test/main.cpp
 iostream
 -
 vector
+-
+map
+-
+tprint.hpp
+/Users/cox/Documents/GitHub/FKCpp/test/tprint.hpp
+cache.hpp
+/Users/cox/Documents/GitHub/FKCpp/test/cache.hpp
+
+/Users/cox/Documents/GitHub/FKCpp/test/tprint.hpp
+iostream
+-
+vector
+-
+map
 -
 

@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/boost_statechart_demo/demo.cc">
+			<Option target="boost_statechart_demo"/>
+		</Unit>
 		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/boost_statechart_demo/main.cpp">
 			<Option target="boost_statechart_demo"/>
 		</Unit>

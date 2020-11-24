@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/boost_statechart_demo.dir/demo.cc.o"
   "CMakeFiles/boost_statechart_demo.dir/main.cpp.o"
   "boost_statechart_demo"
   "boost_statechart_demo.pdb"

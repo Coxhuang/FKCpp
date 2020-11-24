@@ -94,12 +94,12 @@ clean: CMakeFiles/boost_statechart_demo.dir/clean
 CMakeFiles/boost_statechart_demo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_statechart_demo.dir/build.make CMakeFiles/boost_statechart_demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_statechart_demo.dir/build.make CMakeFiles/boost_statechart_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cox/Documents/GitHub/FKCpp/boost_statechart_demo/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target boost_statechart_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cox/Documents/GitHub/FKCpp/boost_statechart_demo/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target boost_statechart_demo"
 .PHONY : CMakeFiles/boost_statechart_demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/boost_statechart_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/boost_statechart_demo/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/boost_statechart_demo/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/boost_statechart_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/boost_statechart_demo/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/boost_statechart_demo.dir/rule
