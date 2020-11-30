@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package test;
-
-message Book {
-  string name = 1;
-  float price = 2;
-}

@@ -1,8 +1,6 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/cox/Documents/GitHub/FKCpp/gRPCDemo
-protobuf found
-PROTO_SRCS = /Users/cox/Documents/GitHub/FKCpp/gRPCDemo/cmake-build-debug/helloworld.pb.cc
-PROTO_HDRS = /Users/cox/Documents/GitHub/FKCpp/gRPCDemo/cmake-build-debug/helloworld.pb.h
-gRPCDemo
+-- Using protobuf 3.12.2
+-- Using gRPC 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/cox/Documents/GitHub/FKCpp/gRPCDemo/cmake-build-debug
