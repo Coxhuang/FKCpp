@@ -1,41 +1,26 @@
 
 //protoc --cpp_out=. helloworld.proto
 //protoc --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` helloworld.proto
-//
-// server.cc
-// Created by leo on 2020/1/31.
-//
-/*
- * Copyright (C) Trunk Technology, Inc. - All Rights Reserved
- *
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
- *
- * Written by Huang Minhang <huangminhang@trunk.tech>, 2020/11/29 10:15 下午
- */
-//
-// server.cc
-// Created by leo on 2020/1/31.
-//
+
 
 #include <string>
 #include <grpcpp/grpcpp.h>
-#include "protos/mathtest.grpc.pb.h"
+#include "protos/helloworld.grpc.pb.h"
 
 using grpc::Server;
 using grpc::ServerBuilder;
 using grpc::ServerContext;
 using grpc::Status;
 
-using mathtest::MathTest;
-using mathtest::MathRequest;
-using mathtest::MathReply;
+using helloworld::TestServer; // MathTest
+using helloworld::HelloMessage; // MathRequest
+using helloworld::Reply; // MathReply
 
-class MathServiceImplementation final : public MathTest::Service {
-    Status sendRequest(
+class HelloServiceImplementation final : public TestServer::Service {
+    Status hello_request(
             ServerContext* context,
-            const MathRequest* request,
-            MathReply* reply
+            const HelloMessage* request,
+            Reply* reply
     ) override {
         int a = request->a();
         int b = request->b();
@@ -46,7 +31,7 @@ class MathServiceImplementation final : public MathTest::Service {
 
 void Run() {
     std::string address("0.0.0.0:5000");
-    MathServiceImplementation service;
+    HelloServiceImplementation service;
     ServerBuilder builder;
     builder.AddListeningPort(address, grpc::InsecureServerCredentials());
     builder.RegisterService(&service);

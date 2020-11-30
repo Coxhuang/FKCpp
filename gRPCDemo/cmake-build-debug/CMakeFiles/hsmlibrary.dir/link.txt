@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libhsmlibrary.a CMakeFiles/hsmlibrary.dir/protos/mathtest.grpc.pb.cc.o CMakeFiles/hsmlibrary.dir/protos/mathtest.pb.cc.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libhsmlibrary.a
