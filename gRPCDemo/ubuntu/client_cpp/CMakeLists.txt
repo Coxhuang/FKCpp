@@ -4,30 +4,27 @@ project(grpcdemo)
 
 set(CMAKE_CXX_STANDARD 14)
 
-find_package(Protobuf REQUIRED)
+find_package(Threads)
+find_package(protobuf REQUIRED)
 
 set(_PROTOBUF_LIBPROTOBUF protobuf::libprotobuf)
 
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(GRPCPP REQUIRED grpc++>=1.22.0)
+find_package(gRPC REQUIRED)
 
 include_directories(
-        ${GRPCPP_INCLUDE_DIRS}
         ${Protobuf_INCLUDE_DIRS}
 )
 
-link_directories(
-        ${GRPCPP_LIBRARY_DIRS}
-)
-
-
 add_library(hellolibrary ../protos/helloworld.grpc.pb.cc ../protos/helloworld.pb.cc )
+
+target_link_libraries(hellolibrary
+        protobuf::libprotobuf
+        )
 
 add_executable(client_bin main.cpp)
 
 target_link_libraries(client_bin
-        ${GRPCPP_LIBRARIES}
-        ${_PROTOBUF_LIBPROTOBUF}
+        gRPC::grpc++
         hellolibrary
         )
 

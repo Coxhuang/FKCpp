@@ -1,6 +1,7 @@
 import grpc
-from macOS.protos import helloworld_pb2
-from macOS.protos import helloworld_pb2_grpc
+# from macOS.protos import helloworld_pb2
+# from macOS.protos import helloworld_pb2_grpc
+from .protos import helloworld_pb2,helloworld_pb2_grpc
 from google.protobuf.json_format import ParseDict
 import time
 
