@@ -13,6 +13,7 @@ SET(Boost_USE_MULTITHREADED ON)
 
 find_package(Boost REQUIRED COMPONENTS system)
 
+
 add_executable(wsppdemo main.cpp)
 
 target_link_libraries(wsppdemo boost_thread boost_system ${CMAKE_THREAD_LIBS_INIT})
