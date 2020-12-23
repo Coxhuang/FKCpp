@@ -3,7 +3,6 @@ import grpc
 
 import macOS.protos.helloworld_pb2 as helloworld__pb2
 
-
 class TestServerStub(object):
   # missing associated documentation comment in .proto file
   pass
@@ -16,6 +15,11 @@ class TestServerStub(object):
     """
     self.hello_request = channel.unary_unary(
         '/helloworld.TestServer/hello_request',
+        request_serializer=helloworld__pb2.HelloMessage.SerializeToString,
+        response_deserializer=helloworld__pb2.Reply.FromString,
+        )
+    self.hello_test = channel.unary_unary(
+        '/helloworld.TestServer/hello_test',
         request_serializer=helloworld__pb2.HelloMessage.SerializeToString,
         response_deserializer=helloworld__pb2.Reply.FromString,
         )
@@ -32,11 +36,23 @@ class TestServerServicer(object):
     context.set_details('Method not implemented!')
     raise NotImplementedError('Method not implemented!')
 
+  def hello_test(self, request, context):
+    # missing associated documentation comment in .proto file
+    pass
+    context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+    context.set_details('Method not implemented!')
+    raise NotImplementedError('Method not implemented!')
+
 
 def add_TestServerServicer_to_server(servicer, server):
   rpc_method_handlers = {
       'hello_request': grpc.unary_unary_rpc_method_handler(
           servicer.hello_request,
+          request_deserializer=helloworld__pb2.HelloMessage.FromString,
+          response_serializer=helloworld__pb2.Reply.SerializeToString,
+      ),
+      'hello_test': grpc.unary_unary_rpc_method_handler(
+          servicer.hello_test,
           request_deserializer=helloworld__pb2.HelloMessage.FromString,
           response_serializer=helloworld__pb2.Reply.SerializeToString,
       ),

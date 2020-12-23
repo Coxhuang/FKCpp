@@ -15,4 +15,5 @@ message HelloMessage {
 
 service TestServer {
     rpc hello_request (HelloMessage) returns (Reply) {}
+    rpc hello_test (HelloMessage) returns (Reply) {}
 }

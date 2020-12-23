@@ -84,9 +84,11 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 const char descriptor_table_protodef_helloworld_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\020helloworld.proto\022\nhelloworld\"\027\n\005Reply\022"
   "\016\n\006result\030\001 \001(\005\"$\n\014HelloMessage\022\t\n\001a\030\001 \001"
-  "(\005\022\t\n\001b\030\002 \001(\0052L\n\nTestServer\022>\n\rhello_req"
-  "uest\022\030.helloworld.HelloMessage\032\021.hellowo"
-  "rld.Reply\"\000B\t\n\007ex.grpcb\006proto3"
+  "(\005\022\t\n\001b\030\002 \001(\0052\211\001\n\nTestServer\022>\n\rhello_re"
+  "quest\022\030.helloworld.HelloMessage\032\021.hellow"
+  "orld.Reply\"\000\022;\n\nhello_test\022\030.helloworld."
+  "HelloMessage\032\021.helloworld.Reply\"\000B\t\n\007ex."
+  "grpcb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_helloworld_2eproto_deps[1] = {
 };
@@ -96,7 +98,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_hel
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_helloworld_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_helloworld_2eproto = {
-  false, false, descriptor_table_protodef_helloworld_2eproto, "helloworld.proto", 190,
+  false, false, descriptor_table_protodef_helloworld_2eproto, "helloworld.proto", 252,
   &descriptor_table_helloworld_2eproto_once, descriptor_table_helloworld_2eproto_sccs, descriptor_table_helloworld_2eproto_deps, 2, 0,
   schemas, file_default_instances, TableStruct_helloworld_2eproto::offsets,
   file_level_metadata_helloworld_2eproto, 2, file_level_enum_descriptors_helloworld_2eproto, file_level_service_descriptors_helloworld_2eproto,

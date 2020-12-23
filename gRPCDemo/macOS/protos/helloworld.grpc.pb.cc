@@ -23,6 +23,7 @@ namespace helloworld {
 
 static const char* TestServer_method_names[] = {
   "/helloworld.TestServer/hello_request",
+  "/helloworld.TestServer/hello_test",
 };
 
 std::unique_ptr< TestServer::Stub> TestServer::NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options) {
@@ -33,6 +34,7 @@ std::unique_ptr< TestServer::Stub> TestServer::NewStub(const std::shared_ptr< ::
 
 TestServer::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel)
   : channel_(channel), rpcmethod_hello_request_(TestServer_method_names[0], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_hello_test_(TestServer_method_names[1], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
   {}
 
 ::grpc::Status TestServer::Stub::hello_request(::grpc::ClientContext* context, const ::helloworld::HelloMessage& request, ::helloworld::Reply* response) {
@@ -63,6 +65,34 @@ void TestServer::Stub::experimental_async::hello_request(::grpc::ClientContext* 
   return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::helloworld::Reply>::Create(channel_.get(), cq, rpcmethod_hello_request_, context, request, false);
 }
 
+::grpc::Status TestServer::Stub::hello_test(::grpc::ClientContext* context, const ::helloworld::HelloMessage& request, ::helloworld::Reply* response) {
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_hello_test_, context, request, response);
+}
+
+void TestServer::Stub::experimental_async::hello_test(::grpc::ClientContext* context, const ::helloworld::HelloMessage* request, ::helloworld::Reply* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_hello_test_, context, request, response, std::move(f));
+}
+
+void TestServer::Stub::experimental_async::hello_test(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::helloworld::Reply* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_hello_test_, context, request, response, std::move(f));
+}
+
+void TestServer::Stub::experimental_async::hello_test(::grpc::ClientContext* context, const ::helloworld::HelloMessage* request, ::helloworld::Reply* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_hello_test_, context, request, response, reactor);
+}
+
+void TestServer::Stub::experimental_async::hello_test(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::helloworld::Reply* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_hello_test_, context, request, response, reactor);
+}
+
+::grpc::ClientAsyncResponseReader< ::helloworld::Reply>* TestServer::Stub::Asynchello_testRaw(::grpc::ClientContext* context, const ::helloworld::HelloMessage& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::helloworld::Reply>::Create(channel_.get(), cq, rpcmethod_hello_test_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::helloworld::Reply>* TestServer::Stub::PrepareAsynchello_testRaw(::grpc::ClientContext* context, const ::helloworld::HelloMessage& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::helloworld::Reply>::Create(channel_.get(), cq, rpcmethod_hello_test_, context, request, false);
+}
+
 TestServer::Service::Service() {
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       TestServer_method_names[0],
@@ -74,12 +104,29 @@ TestServer::Service::Service() {
              ::helloworld::Reply* resp) {
                return service->hello_request(ctx, req, resp);
              }, this)));
+  AddMethod(new ::grpc::internal::RpcServiceMethod(
+      TestServer_method_names[1],
+      ::grpc::internal::RpcMethod::NORMAL_RPC,
+      new ::grpc::internal::RpcMethodHandler< TestServer::Service, ::helloworld::HelloMessage, ::helloworld::Reply>(
+          [](TestServer::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::helloworld::HelloMessage* req,
+             ::helloworld::Reply* resp) {
+               return service->hello_test(ctx, req, resp);
+             }, this)));
 }
 
 TestServer::Service::~Service() {
 }
 
 ::grpc::Status TestServer::Service::hello_request(::grpc::ServerContext* context, const ::helloworld::HelloMessage* request, ::helloworld::Reply* response) {
+  (void) context;
+  (void) request;
+  (void) response;
+  return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+}
+
+::grpc::Status TestServer::Service::hello_test(::grpc::ServerContext* context, const ::helloworld::HelloMessage* request, ::helloworld::Reply* response) {
   (void) context;
   (void) request;
   (void) response;
