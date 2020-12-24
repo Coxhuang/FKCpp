@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/myglog.dir/main.cpp.o  -o myglog  -Wl,-rpath,/usr/local/lib /usr/local/lib/libglog.a /usr/local/lib/libgflags.2.2.2.dylib 

@@ -34,6 +34,7 @@ class HelloBusiness(object):
         proto_data = helloworld_pb2.HelloMessage()  #
         ParseDict(msg, proto_data)  # 格式化msg
         response = self.client.hello_request.future(proto_data)  # 向server发送数据
+        # response = self.client.hello_request(proto_data)  # 向server发送数据
         response.add_done_callback(self.hello_callback)  # 回调函数, 发送数据使用异步[future]时, 必须加回调函数
 
         return response
@@ -41,7 +42,27 @@ class HelloBusiness(object):
     def hello_callback(self, future):
 
         print(future.result().result)
-        print("callback")
+        print("hello_callback")
+
+    def hello_test_business(self, msg):
+        """
+
+        :param msg: request msg
+        :return:
+        """
+
+        proto_data = helloworld_pb2.HelloMessage()  #
+        ParseDict(msg, proto_data)  # 格式化msg
+        response = self.client.hello_test.future(proto_data)  # 向server发送数据
+        # response = self.client.hello_test(proto_data)  # 向server发送数据
+        response.add_done_callback(self.hello_callback)  # 回调函数, 发送数据使用异步[future]时, 必须加回调函数
+
+        return response
+
+    def hello_test_callback(self, future):
+
+        print(future.result().result)
+        print("hello_test_callback")
 
 class HelloWorld(HelloBusiness):
 
@@ -58,11 +79,28 @@ class HelloWorld(HelloBusiness):
 
         return None
 
+    def hello_test(self, *args, **kwargs):
+        """
+
+        :return: None
+        """
+
+        self.hello_test_business({
+            "a": 1,
+            "b": 2,
+        })
+
+        return None
+
 
 grpc_client = HelloWorld()
 
 if __name__ == '__main__':
 
     grpc_client.hello()
-    time.sleep(2)
+    # time.sleep(1)
+    grpc_client.hello_test()
+    time.sleep(5)
+
+
 

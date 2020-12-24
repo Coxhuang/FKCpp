@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/cox/Documents/GitHub/FKCpp/智能指针/a_class.hpp
+iostream
+-
+
+/Users/cox/Documents/GitHub/FKCpp/智能指针/b_class.hpp
+iostream
+-
+a_class.hpp
+/Users/cox/Documents/GitHub/FKCpp/智能指针/a_class.hpp
+
+/Users/cox/Documents/GitHub/FKCpp/智能指针/main.cpp
+iostream
+-
+a_class.hpp
+/Users/cox/Documents/GitHub/FKCpp/智能指针/a_class.hpp
+b_class.hpp
+/Users/cox/Documents/GitHub/FKCpp/智能指针/b_class.hpp
+

@@ -1,0 +1,4 @@
+/Users/cox/Documents/GitHub/FKCpp/my_log/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/cox/Documents/GitHub/FKCpp/my_log/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/cox/Documents/GitHub/FKCpp/my_log/cmake-build-debug/CMakeFiles/my_log.dir
+/Users/cox/Documents/GitHub/FKCpp/my_log/cmake-build-debug/CMakeFiles/tlog.dir

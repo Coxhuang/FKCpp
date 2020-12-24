@@ -9,5 +9,22 @@
 
 #ifndef MY_LOG_TLOG_H
 #define MY_LOG_TLOG_H
+#include <iostream>
+#include "spdlog/spdlog.h"
+#include "spdlog/sinks/rotating_file_sink.h"
+
+class Tlog{
+public:
+    Tlog();
+    ~Tlog();
+
+public:
+    void hello();
+
+public:
+
+
+
+};
 
 #endif //MY_LOG_TLOG_H

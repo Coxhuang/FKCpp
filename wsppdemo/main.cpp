@@ -38,7 +38,7 @@ public:
 
     void on_open(websocketpp::connection_hdl hdl) {
         std::cout << "on_open" << std::endl;
-        server.get_connection();
+//        server.get_connection();
         this->add_user(hdl);
     }
 

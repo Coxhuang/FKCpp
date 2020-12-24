@@ -6,7 +6,7 @@
  *
  * Written by Huang Minhang <huangminhang@trunk.tech>, 2020/11/26 5:05 下午
  */
- 
+
 #ifndef MASTER_PRT_C_CLASS_HPP
 #define MASTER_PRT_C_CLASS_HPP
 

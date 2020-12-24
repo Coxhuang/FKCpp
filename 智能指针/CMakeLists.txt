@@ -3,4 +3,4 @@ project(master_prt)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(main.cpp)
+add_executable(master_exe main.cpp )

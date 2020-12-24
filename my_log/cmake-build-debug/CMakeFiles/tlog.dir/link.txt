@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -dynamiclib -Wl,-headerpad_max_install_names  -o libtlog.dylib -install_name @rpath/libtlog.dylib CMakeFiles/tlog.dir/tlog/tlog.cc.o 

@@ -1,3 +1,2 @@
-class tester:
-    def add(self, a, b):
-        return a + b
+def add_num(a,b):
+    return a+b

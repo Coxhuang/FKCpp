@@ -37,6 +37,9 @@ public:
         HelloMessage request;
         Reply reply;
         ClientContext context;
+        std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() + std::chrono::seconds(1);
+
+        context.set_deadline(deadline);
 
         request.set_a(21);
         request.set_b(22);

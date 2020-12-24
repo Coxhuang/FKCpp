@@ -7,8 +7,6 @@ set(CMAKE_CXX_STANDARD 14)
 find_package(Threads)
 find_package(protobuf REQUIRED)
 
-set(_PROTOBUF_LIBPROTOBUF protobuf::libprotobuf)
-
 find_package(gRPC REQUIRED)
 
 include_directories(

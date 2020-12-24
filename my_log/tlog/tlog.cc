@@ -6,4 +6,16 @@
  *
  * Written by Huang Minhang <huangminhang@trunk.tech>, 2020/12/23 2:24 下午
  */
- 
+#include "tlog.h"
+
+Tlog::Tlog() {}
+Tlog::~Tlog() {}
+
+void Tlog::hello() {
+    std::cout << "hello" << std::endl;
+}
+
+
+
+
+

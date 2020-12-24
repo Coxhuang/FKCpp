@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/cox/Documents/GitHub/FKCpp/my_extend/main.cpp
+iostream
+-
+src/b/b.h
+/Users/cox/Documents/GitHub/FKCpp/my_extend/src/b/b.h
+
+/Users/cox/Documents/GitHub/FKCpp/my_extend/src/a/a.h
+iostream
+-
+memory
+-
+
+/Users/cox/Documents/GitHub/FKCpp/my_extend/src/b/b.h
+iostream
+-
+../../src/a/a.h
+/Users/cox/Documents/GitHub/FKCpp/my_extend/src/a/a.h
+
