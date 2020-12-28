@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=gnu++14
 
-CXX_DEFINES = 
+CXX_DEFINES = -DGFLAGS_DLL_DECLARE_FLAG="" -DGFLAGS_DLL_DEFINE_FLAG="" -DGFLAGS_IS_A_DLL=0 -DGOOGLE_GLOG_DLL_DECL=""
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/usr/local/Cellar/glog/0.4.0/include -I/usr/local/Cellar/gflags/2.2.2/include -isystem /usr/local/include 
 

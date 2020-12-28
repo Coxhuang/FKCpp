@@ -3,3 +3,9 @@
 
 CMakeFiles/glog_demo.dir/main.cpp.o
  /Users/cox/Documents/GitHub/FKCpp/glog_demo/main.cpp
+ /usr/local/Cellar/gflags/2.2.2/include/gflags/gflags.h
+ /usr/local/Cellar/gflags/2.2.2/include/gflags/gflags_declare.h
+ /usr/local/Cellar/gflags/2.2.2/include/gflags/gflags_gflags.h
+ /usr/local/Cellar/glog/0.4.0/include/glog/log_severity.h
+ /usr/local/Cellar/glog/0.4.0/include/glog/logging.h
+ /usr/local/Cellar/glog/0.4.0/include/glog/vlog_is_on.h

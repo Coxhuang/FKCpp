@@ -99,6 +99,8 @@ glog_demo_EXTERNAL_OBJECTS =
 
 glog_demo: CMakeFiles/glog_demo.dir/main.cpp.o
 glog_demo: CMakeFiles/glog_demo.dir/build.make
+glog_demo: /usr/local/lib/libglog.a
+glog_demo: /usr/local/lib/libgflags.2.2.2.dylib
 glog_demo: CMakeFiles/glog_demo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cox/Documents/GitHub/FKCpp/glog_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable glog_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glog_demo.dir/link.txt --verbose=$(VERBOSE)
