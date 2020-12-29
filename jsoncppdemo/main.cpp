@@ -52,8 +52,21 @@ int main() {
 
     const std::string json_filea = writer.write(item);
     std::cout << json_filea << std::endl;
-    std::cout << "item:" <<  item[0] << std::endl;
-    std::cout << "item:" <<  static_cast<int>(item[0].asFloat()) << std::endl;
+
+
+    Json::Value root;
+    root["map_name"] = "test";
+    root["position_name"] = "test1";
+
+    Json::StreamWriterBuilder writerBuilder;
+    std::unique_ptr<Json::StreamWriter> json_write(writerBuilder.newStreamWriter());
+    std::ostringstream ss;
+    json_write->write(root, &ss);
+    std::string data = ss.str();
+//    std::string strContent = ss.str();
+    std::cout << data << std::endl;
+
+
 
 
 
