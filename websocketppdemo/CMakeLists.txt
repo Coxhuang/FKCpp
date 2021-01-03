@@ -3,4 +3,18 @@ project(websocketppdemo)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(websocketppdemo main.cpp)
+include_directories(include)
+
+find_package (Boost REQUIRED COMPONENTS system thread)
+
+include_directories(${Boost_INCLUDE_DIRS})
+
+link_directories (
+        ${Boost_LIBRARY_DIRS}
+)
+
+add_executable(websocketppdemo main.cpp )
+
+target_link_libraries(websocketppdemo
+        ${Boost_LIBRARIES}
+        )
