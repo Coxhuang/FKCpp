@@ -30,12 +30,14 @@
  */
 
 #include <websocketpp/config/debug_asio_no_tls.hpp>
+#include "include/websocketpp/server.hpp"
 
 // Custom logger
 #include <websocketpp/logger/syslog.hpp>
-
+#include <boost/algorithm/string.hpp>
+#include <boost/thread.hpp>
+#include <websocketpp/config/asio_no_tls.hpp>
 #include <websocketpp/server.hpp>
-#include <json/json.h>
 
 #include <iostream>
 #include <memory>
@@ -86,7 +88,8 @@ struct debug_custom : public websocketpp::config::debug_asio {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-typedef websocketpp::server<debug_custom> server;
+//typedef websocketpp::server<debug_custom> server;
+typedef websocketpp::server<websocketpp::config::asio> server;
 
 using websocketpp::lib::placeholders::_1;
 using websocketpp::lib::placeholders::_2;
@@ -100,35 +103,19 @@ bool validate(server *, websocketpp::connection_hdl) {
     return true;
 }
 
-void string_to_json(Json::Value &value, std::string data){
-    std::string err;
-    Json::CharReaderBuilder reader;
-    std::unique_ptr<Json::CharReader>const json_read(reader.newCharReader());
-    json_read->parse(data.c_str(), data.c_str() + data.length(), &value, &err);
-
-}
-
 void on_http(server* s, websocketpp::connection_hdl hdl) {
     server::connection_ptr con = s->get_con_from_hdl(hdl);
     auto request_method = con->get_request().get_method(); // 请求方式 POST
     auto request_url = con->get_request().get_uri(); // URL
     auto request_data = con->get_request().raw();
 
-    auto body = con->get_request_body().data();
-    Json::Value value;
-    std::string sss;
-    string_to_json(value,body);
-
-    std::string strLoginResponse = value.toStyledString();
-
-
 
     std::stringstream ss;
-    ss << "got HTTP request with " << value["cpu"]  << " bytes of body data.";
 
-//    con->set_body(ss.str());
-    con->set_body(strLoginResponse);
+    con->set_body(ss.str());
     con->set_status(websocketpp::http::status_code::ok);
+
+    std::cout << con->get_response().get_status_code() << std::endl;
 }
 
 int main() {
@@ -151,12 +138,15 @@ int main() {
 
         // Listen on port 9012
         echo_server.listen(9012);
+        std::cout << "running: 9012" << std::endl;
 
         // Start the server accept loop
         echo_server.start_accept();
 
         // Start the ASIO io_service run loop
         echo_server.run();
+
+
     } catch (websocketpp::exception const & e) {
         std::cout << e.what() << std::endl;
     } catch (const std::exception & e) {

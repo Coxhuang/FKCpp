@@ -5,7 +5,7 @@
 		<Option title="websocketppdemo"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.75.0\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.75.0\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/cox/Documents/GitHub/FKCpp/websocketppdemo/cmake-build-debug"/>
@@ -87,6 +87,18 @@
 		</Unit>
 		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/websocketppdemo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/websocketppdemo/../../../../../../usr/local/lib/cmake/Boost-1.75.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.75.0\"/>
+		</Unit>
+		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/websocketppdemo/../../../../../../usr/local/lib/cmake/Boost-1.75.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.75.0\"/>
+		</Unit>
+		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/websocketppdemo/../../../../../../usr/local/lib/cmake/boost_headers-1.75.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.75.0\"/>
+		</Unit>
+		<Unit filename="/Users/cox/Documents/GitHub/FKCpp/websocketppdemo/../../../../../../usr/local/lib/cmake/boost_headers-1.75.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.75.0\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

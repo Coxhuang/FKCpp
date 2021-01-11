@@ -1,16 +1,5 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/cox/Documents/GitHub/FKCpp/websocketppdemo
--- Looking for pthread.h
--- Looking for pthread.h - found
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE  
-CMake Error at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:164 (message):
-  Could NOT find Boost (missing: system thread) (found version "1.58.0")
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:445 (_FPHSA_FAILURE_MESSAGE)
-  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindBoost.cmake:2166 (find_package_handle_standard_args)
-  CMakeLists.txt:8 (find_package)
-
-
--- Configuring incomplete, errors occurred!
-See also "/Users/cox/Documents/GitHub/FKCpp/websocketppdemo/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Found Boost: /usr/local/lib/cmake/Boost-1.75.0/BoostConfig.cmake (found version "1.75.0")  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/cox/Documents/GitHub/FKCpp/websocketppdemo/cmake-build-debug

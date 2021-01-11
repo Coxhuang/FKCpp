@@ -33,7 +33,7 @@ Boost_DATE_TIME_LIBRARY_DEBUG:FILEPATH=Boost_DATE_TIME_LIBRARY_DEBUG-NOTFOUND
 Boost_DATE_TIME_LIBRARY_RELEASE:FILEPATH=Boost_DATE_TIME_LIBRARY_RELEASE-NOTFOUND
 
 //The directory containing a CMake configuration file for Boost.
-Boost_DIR:PATH=Boost_DIR-NOTFOUND
+Boost_DIR:PATH=/usr/local/lib/cmake/Boost-1.75.0
 
 //Path to a file.
 Boost_INCLUDE_DIR:PATH=/usr/local/include
@@ -257,8 +257,17 @@ CMAKE_STRIP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/local/bin/pkg-config
+
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=/usr/local/lib/cmake/boost_headers-1.75.0
+
+//Path to a library.
+pkgcfg_lib_JSONCPP_jsoncpp:FILEPATH=/usr/local/Cellar/jsoncpp/1.9.3/lib/libjsoncpp.dylib
 
 //Value Computed by CMake
 websocketppdemo_BINARY_DIR:STATIC=/Users/cox/Documents/GitHub/FKCpp/websocketppdemo/cmake-build-debug
@@ -285,6 +294,8 @@ Boost_DATE_TIME_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 Boost_DATE_TIME_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_DIR
 Boost_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_INCLUDE_DIR
+Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_SYSTEM_LIBRARY_DEBUG
 Boost_SYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_SYSTEM_LIBRARY_RELEASE
@@ -438,8 +449,64 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/local/lib/cmake/Boost-1.75.0/BoostConfig.cmake][c ][v1.75.0()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/local/bin/pkg-config][v0.29.2()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+JSONCPP_CFLAGS:INTERNAL=-I/usr/local/Cellar/jsoncpp/1.9.3/include
+JSONCPP_CFLAGS_I:INTERNAL=
+JSONCPP_CFLAGS_OTHER:INTERNAL=
+JSONCPP_FOUND:INTERNAL=1
+JSONCPP_INCLUDEDIR:INTERNAL=/usr/local/Cellar/jsoncpp/1.9.3/include
+JSONCPP_INCLUDE_DIRS:INTERNAL=/usr/local/Cellar/jsoncpp/1.9.3/include
+JSONCPP_LDFLAGS:INTERNAL=-L/usr/local/Cellar/jsoncpp/1.9.3/lib;-ljsoncpp
+JSONCPP_LDFLAGS_OTHER:INTERNAL=
+JSONCPP_LIBDIR:INTERNAL=/usr/local/Cellar/jsoncpp/1.9.3/lib
+JSONCPP_LIBRARIES:INTERNAL=jsoncpp
+JSONCPP_LIBRARY_DIRS:INTERNAL=/usr/local/Cellar/jsoncpp/1.9.3/lib
+JSONCPP_LIBS:INTERNAL=
+JSONCPP_LIBS_L:INTERNAL=
+JSONCPP_LIBS_OTHER:INTERNAL=
+JSONCPP_LIBS_PATHS:INTERNAL=
+JSONCPP_MODULE_NAME:INTERNAL=jsoncpp
+JSONCPP_PREFIX:INTERNAL=/usr/local/Cellar/jsoncpp/1.9.3
+JSONCPP_STATIC_CFLAGS:INTERNAL=-I/usr/local/Cellar/jsoncpp/1.9.3/include
+JSONCPP_STATIC_CFLAGS_I:INTERNAL=
+JSONCPP_STATIC_CFLAGS_OTHER:INTERNAL=
+JSONCPP_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/Cellar/jsoncpp/1.9.3/include
+JSONCPP_STATIC_LDFLAGS:INTERNAL=-L/usr/local/Cellar/jsoncpp/1.9.3/lib;-ljsoncpp
+JSONCPP_STATIC_LDFLAGS_OTHER:INTERNAL=
+JSONCPP_STATIC_LIBDIR:INTERNAL=
+JSONCPP_STATIC_LIBRARIES:INTERNAL=jsoncpp
+JSONCPP_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/Cellar/jsoncpp/1.9.3/lib
+JSONCPP_STATIC_LIBS:INTERNAL=
+JSONCPP_STATIC_LIBS_L:INTERNAL=
+JSONCPP_STATIC_LIBS_OTHER:INTERNAL=
+JSONCPP_STATIC_LIBS_PATHS:INTERNAL=
+JSONCPP_VERSION:INTERNAL=1.9.3
+JSONCPP_jsoncpp_INCLUDEDIR:INTERNAL=
+JSONCPP_jsoncpp_LIBDIR:INTERNAL=
+JSONCPP_jsoncpp_PREFIX:INTERNAL=
+JSONCPP_jsoncpp_VERSION:INTERNAL=
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
+//Components requested for this build tree.
+_Boost_COMPONENTS_SEARCHED:INTERNAL=
+//Last used Boost_INCLUDE_DIR value.
+_Boost_INCLUDE_DIR_LAST:INTERNAL=/usr/local/include
+//Last used Boost_NAMESPACE value.
+_Boost_NAMESPACE_LAST:INTERNAL=boost
+//Last used Boost_USE_MULTITHREADED value.
+_Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
+__pkg_config_arguments_JSONCPP:INTERNAL=jsoncpp
+__pkg_config_checked_JSONCPP:INTERNAL=1
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_JSONCPP_jsoncpp
+pkgcfg_lib_JSONCPP_jsoncpp-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/local/Cellar/jsoncpp/1.9.3/lib
 
