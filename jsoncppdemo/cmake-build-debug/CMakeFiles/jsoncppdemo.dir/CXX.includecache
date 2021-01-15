@@ -9,9 +9,17 @@
 /Users/cox/Documents/GitHub/FKCpp/jsoncppdemo/main.cpp
 iostream
 -
+sstream
+-
+iomanip
+-
 json/json.h
 /Users/cox/Documents/GitHub/FKCpp/jsoncppdemo/json/json.h
 stdio.h
+-
+cstring
+-
+string
 -
 
 /usr/local/include/json/allocator.h

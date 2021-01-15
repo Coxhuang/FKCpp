@@ -1,6 +1,10 @@
 #include <iostream>
+#include <sstream>
+#include <iomanip>
 #include "json/json.h"
 #include <stdio.h>
+#include <cstring>
+#include <string>
 
 
 
@@ -15,6 +19,12 @@ void func2(Json::Value *t){
 //    const std::string json_file = writer.write(*t);
 //    std::cout << json_file << std::endl;
     func(t);
+}
+
+static void fmt_jsoncpp(Json::Value value){
+    Json::FastWriter writer;
+    const std::string json_string = writer.write(value);
+    std::cout << json_string << std::endl;
 }
 
 
@@ -45,11 +55,8 @@ int main() {
 //    item[1].append(1);
     item.append(0);
     item.append(0);
-//    arrayObj.clear();
+    item.clear();
     Json::FastWriter writer;
-//    const std::string json_file = writer.write(arrayObj);
-//    std::cout << json_file << std::endl;
-
     const std::string json_filea = writer.write(item);
     std::cout << json_filea << std::endl;
 
@@ -58,17 +65,40 @@ int main() {
     root["map_name"] = "test";
     root["position_name"] = "test1";
 
-    Json::StreamWriterBuilder writerBuilder;
-    std::unique_ptr<Json::StreamWriter> json_write(writerBuilder.newStreamWriter());
-    std::ostringstream ss;
-    json_write->write(root, &ss);
-    std::string data = ss.str();
+//    Json::StreamWriterBuilder writerBuilder;
+//    std::unique_ptr<Json::StreamWriter> json_write(writerBuilder.newStreamWriter());
+//    std::ostringstream ss;
+//    json_write->write(root, &ss);
+//    std::string data = ss.str();
 //    std::string strContent = ss.str();
-    std::cout << data << std::endl;
+
+    std::string strJson1 = writer.write(root);
+
+    std::cout << strJson1 << std::endl;
 
 
+    double a = 0.87520803892910404;
+    std::cout << a <<std::endl;
+    std::cout << std::to_string(a) <<std::endl;
 
+    std::stringstream ss;
+    ss << std::setprecision(15) << a;
+    std::cout << ss.str() <<std::endl;
 
+    std::string oooo = "1cdcdcd";
+
+    std::cout << "----------: " << oooo.rfind("\\n") << std::endl;
+
+    double d = 1;
+    std::cout << d << std::endl;
+
+    if (d == 0) {
+        std::cout << "00000" << std::endl;
+    }
+
+    Json::Value v15;
+    v15.resize(0); // 构造空数组 []
+    fmt_jsoncpp(v15);
 
     return 0;
 }
