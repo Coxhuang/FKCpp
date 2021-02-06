@@ -8,50 +8,25 @@
  */
 #include "ws.h"
 
+#include <utility>
+
 namespace trunk {
 namespace bshell {
 namespace ws {
-
-    std::shared_ptr<BShellWebSocket> BShellWebSocket::ws_ptr_ = nullptr;
-    std::mutex BShellWebSocket::ws_mutex_; // static
-    std::shared_ptr<BShellWebSocket> BShellWebSocket::instance() {
-        if (BShellWebSocket::ws_ptr_ == nullptr){
-            std::lock_guard<std::mutex> _(ws_mutex_);
-            if (BShellWebSocket::ws_ptr_ == nullptr){
-                BShellWebSocket::ws_ptr_ = std::make_shared<BShellWebSocket>();
-            } else {}
-        } else {}
-        return BShellWebSocket::ws_ptr_;
-    }
 
     BShellWebSocket::BShellWebSocket() {
         this->init(); // 初始化 WebSocket
     }
 
+    void BShellWebSocket::hi() {
+        std::cout << "hello" << std::endl;
+    }
+
     BShellWebSocket::~BShellWebSocket() {
-        tlog->info("~~~~~~~~~~~~~~~~WebSocketpp Destructor~~~~~~~~~~~~~~~~~~~");
     }
 
     void BShellWebSocket::init() {
-        this->init_ptr();
         this->init_ws();
-        this->init_member();
-    }
-
-    void BShellWebSocket::init_ptr() {
-        this->cache_handle_ptr_ = cache::Handle::instance(); // cache handle ptr
-    }
-
-    void BShellWebSocket::init_member() {
-        this->url_table = {
-                std::pair<std::string, unsigned int>("/hello/",0),
-                std::pair<std::string, unsigned int>("/api/brainshell/map-start/",1),
-                std::pair<std::string, unsigned int>("/api/brainshell/ogm-point/",2),
-                std::pair<std::string, unsigned int>("/api/brainshell/emerge-stop/",3),
-                std::pair<std::string, unsigned int>("/api/brainshell/login-tos/",4),
-                std::pair<std::string, unsigned int>("/api/brainshell/reset-task/",5),
-                std::pair<std::string, unsigned int>("/system-msg/",6)
-        };
     }
 
     void BShellWebSocket::init_ws() {
@@ -91,70 +66,42 @@ namespace ws {
         );
     }
 
-    void BShellWebSocket::run() {
-        tlog->info("+++++++++++++ WebSocket running :20200 ++++++++++++++");
-        BShellWebSocket::instance()->start();
-    }
-
-    void BShellWebSocket::on_open(websocketpp::connection_hdl hdl) {
-        tlog->info("-------------- WebSocket open ---------------");
+    void BShellWebSocket::on_open(const websocketpp::connection_hdl& hdl) {
         this->add_user(hdl);
     }
 
-    void BShellWebSocket::on_message(websocketpp::connection_hdl hdl, io_server::message_ptr msg) {
-//        tlog->info("-------------- client msg to WebSocket ---------------");
-//        for (auto &user : this->user_list) {
-//            server.send(user, msg->get_payload(), msg->get_opcode()); // 发送消息 将客户端发来的消息 发回去
-//        }
+    void BShellWebSocket::on_message(const websocketpp::connection_hdl& hdl, const io_server::message_ptr& msg) {
+        for (auto &user : this->user_list) {
+            server.send(user, msg->get_payload(), msg->get_opcode()); // 发送消息 将客户端发来的消息 发回去
+        }
     }
 
-    void BShellWebSocket::on_close(websocketpp::connection_hdl hdl) {
-        tlog->info("-------------- WebSocket close ---------------");
+    void BShellWebSocket::on_close(const websocketpp::connection_hdl& hdl) {
         this->del_user(hdl);
     }
 
-    void BShellWebSocket::on_fail(websocketpp::connection_hdl hdl) {
-        tlog->info("-------------- WebSocket connect fail ---------------");
+    void BShellWebSocket::on_fail(const websocketpp::connection_hdl& hdl) {
     }
 
-    bool BShellWebSocket::on_ping(websocketpp::connection_hdl hdl, std::string s) {
-        tlog->info("-------------- WebSocket ping ---------------");
+    bool BShellWebSocket::on_ping(const websocketpp::connection_hdl& hdl, const std::string& s) {
         return true;
     }
 
-    void BShellWebSocket::on_pong(websocketpp::connection_hdl hdl) {
-        tlog->info("-------------- WebSocket pong ---------------");
+    void BShellWebSocket::on_pong(const websocketpp::connection_hdl& hdl) {
     }
 
     void BShellWebSocket::on_http(websocketpp::connection_hdl hdl) {
-        Json::Value data;
-        auto con = this->server.get_con_from_hdl(hdl);
-        this->request_before(con);
-        this->get_data(data);
+//        auto con = this->server.get_con_from_hdl(std::move(hdl));
+        auto con = this->server.get_con_from_hdl(std::move(hdl));
 
-        switch (this->route(this->get_url())) {
-            case url::map_start: // 获取地图数据
-                http::view::HttpView::map_start(con, data);break;
-            case url::ogm_point: // 获取静态障碍物
-                http::view::HttpView::ogm_point(con, data);break;
-            case url::emerge_stop: // 紧急停车
-                http::view::HttpView::emerge_stop(con, data);break;
-            case url::login_tos: // 登录tos
-                http::view::HttpView::login_tos(con, data);break;
-            case url::reset_task: // 重置任务
-                http::view::HttpView::reset_task(con, data);break;
-            case url::system_msg: // 系统信息
-                http::view::HttpView::system_msg(con, data);break;
-            case url::hello: // 测试
-                http::view::HttpView::hello(con, data);break;
-            default: // 404
-                http::view::HttpView::exception(con);break;
-        }; // switch
+        std::stringstream ss;
+        ss << "got HTTP request with " << " bytes of body data.";
 
-        this->request_after(con);
+        con->set_body(ss.str());
+        con->set_status(websocketpp::http::status_code::ok);
     }
 
-    int BShellWebSocket::route(std::string uri) {
+    int BShellWebSocket::route(const std::string& uri) {
         std::map<std::string, unsigned int>::iterator it;
         int target;
         it = this->url_table.find(uri);
@@ -166,32 +113,22 @@ namespace ws {
         return target;
     }
 
+    void BShellWebSocket::run() {
+        BShellWebSocket ws;
+        ws.start();
+    }
+
     void BShellWebSocket::start() {
         this->server.listen(20200);
         this->server.start_accept();
         this->server.run(); // block
     }
 
-    void BShellWebSocket::server_stop() {
-//        if (this->server.is_listening()) {
-//            tlog->info("<mouth-websocket> STOP! ");
-//            this->server.stop_listening(); // 官方例子关闭server用的是 stop_listening();
-//        } else {}
-        tlog->info("<mouth-websocket> STOP! ");
-        BShellWebSocket::instance()->server.stop_listening();
-    }
-
-    void BShellWebSocket::exit() {
-
-    }
-
-    void BShellWebSocket::add_user(websocketpp::connection_hdl hdl) {
+    void BShellWebSocket::add_user(const websocketpp::connection_hdl& hdl) {
         this->user_list.push_back(hdl); // add user
-        tlog->info("<mouth-ws> add user,current count:[{}]",this->user_list.size());
     }
 
-    void BShellWebSocket::del_user(websocketpp::connection_hdl hdl) {
-        tlog->info("<mouth-ws> delete user");
+    void BShellWebSocket::del_user(const websocketpp::connection_hdl& hdl) {
         std::list<websocketpp::connection_hdl>::iterator users_begin, users_end;
         users_begin = this->user_list.begin();
         users_end = this->user_list.end();
@@ -208,15 +145,6 @@ namespace ws {
                 }
             }
         } // else
-        tlog->info("<mouth-ws> delete user,current count:[{}]",this->user_list.size());
-    }
-
-    void BShellWebSocket::period_sent() {
-        auto subscriber_data = this->cache_handle_ptr_->get_ws(); // subscribe cache data
-        std::string response_message = subscriber_data->toStyledString();
-        for (auto &user : this->user_list) {
-            server.send(user, response_message.c_str(), websocketpp::frame::opcode::TEXT); // 发送Json消息
-        }
     }
 
 } // ws

@@ -43,7 +43,6 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  ../include/websocketpp/impl/utilities_impl.hpp
  ../include/websocketpp/logger/basic.hpp
  ../include/websocketpp/logger/levels.hpp
- ../include/websocketpp/logger/syslog.hpp
  ../include/websocketpp/message_buffer/alloc.hpp
  ../include/websocketpp/message_buffer/message.hpp
  ../include/websocketpp/processors/base.hpp
@@ -54,7 +53,6 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  ../include/websocketpp/processors/processor.hpp
  ../include/websocketpp/random/none.hpp
  ../include/websocketpp/roles/server_endpoint.hpp
- ../include/websocketpp/server.hpp
  ../include/websocketpp/sha1/sha1.hpp
  ../include/websocketpp/transport/asio/base.hpp
  ../include/websocketpp/transport/asio/connection.hpp
@@ -72,45 +70,7 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  ../include/websocketpp/version.hpp
  /Users/cox/Documents/GitHub/FKCpp/websocketppdemo/include/websocketpp/server.hpp
  /Users/cox/Documents/GitHub/FKCpp/websocketppdemo/main.cpp
- /usr/local/include/boost/algorithm/string.hpp
- /usr/local/include/boost/algorithm/string/case_conv.hpp
- /usr/local/include/boost/algorithm/string/classification.hpp
- /usr/local/include/boost/algorithm/string/compare.hpp
- /usr/local/include/boost/algorithm/string/concept.hpp
- /usr/local/include/boost/algorithm/string/config.hpp
- /usr/local/include/boost/algorithm/string/constants.hpp
- /usr/local/include/boost/algorithm/string/detail/case_conv.hpp
- /usr/local/include/boost/algorithm/string/detail/classification.hpp
- /usr/local/include/boost/algorithm/string/detail/find_format.hpp
- /usr/local/include/boost/algorithm/string/detail/find_format_all.hpp
- /usr/local/include/boost/algorithm/string/detail/find_format_store.hpp
- /usr/local/include/boost/algorithm/string/detail/find_iterator.hpp
- /usr/local/include/boost/algorithm/string/detail/finder.hpp
- /usr/local/include/boost/algorithm/string/detail/formatter.hpp
- /usr/local/include/boost/algorithm/string/detail/predicate.hpp
- /usr/local/include/boost/algorithm/string/detail/replace_storage.hpp
- /usr/local/include/boost/algorithm/string/detail/sequence.hpp
- /usr/local/include/boost/algorithm/string/detail/trim.hpp
- /usr/local/include/boost/algorithm/string/detail/util.hpp
- /usr/local/include/boost/algorithm/string/erase.hpp
- /usr/local/include/boost/algorithm/string/find.hpp
- /usr/local/include/boost/algorithm/string/find_format.hpp
- /usr/local/include/boost/algorithm/string/find_iterator.hpp
- /usr/local/include/boost/algorithm/string/finder.hpp
- /usr/local/include/boost/algorithm/string/formatter.hpp
- /usr/local/include/boost/algorithm/string/iter_find.hpp
- /usr/local/include/boost/algorithm/string/join.hpp
- /usr/local/include/boost/algorithm/string/predicate.hpp
- /usr/local/include/boost/algorithm/string/predicate_facade.hpp
- /usr/local/include/boost/algorithm/string/replace.hpp
- /usr/local/include/boost/algorithm/string/sequence_traits.hpp
- /usr/local/include/boost/algorithm/string/split.hpp
- /usr/local/include/boost/algorithm/string/std/list_traits.hpp
- /usr/local/include/boost/algorithm/string/std/slist_traits.hpp
- /usr/local/include/boost/algorithm/string/std/string_traits.hpp
- /usr/local/include/boost/algorithm/string/std_containers_traits.hpp
- /usr/local/include/boost/algorithm/string/trim.hpp
- /usr/local/include/boost/algorithm/string/yes_no_type.hpp
+ /Users/cox/Documents/GitHub/FKCpp/websocketppdemo/src/ws.h
  /usr/local/include/boost/aligned_storage.hpp
  /usr/local/include/boost/array.hpp
  /usr/local/include/boost/asio.hpp
@@ -753,16 +713,6 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/chrono/system_clocks.hpp
  /usr/local/include/boost/chrono/thread_clock.hpp
  /usr/local/include/boost/chrono/time_point.hpp
- /usr/local/include/boost/concept/assert.hpp
- /usr/local/include/boost/concept/detail/backward_compatibility.hpp
- /usr/local/include/boost/concept/detail/borland.hpp
- /usr/local/include/boost/concept/detail/concept_def.hpp
- /usr/local/include/boost/concept/detail/concept_undef.hpp
- /usr/local/include/boost/concept/detail/general.hpp
- /usr/local/include/boost/concept/detail/has_constraints.hpp
- /usr/local/include/boost/concept/detail/msvc.hpp
- /usr/local/include/boost/concept/usage.hpp
- /usr/local/include/boost/concept_check.hpp
  /usr/local/include/boost/config.hpp
  /usr/local/include/boost/config/abi_prefix.hpp
  /usr/local/include/boost/config/abi_suffix.hpp
@@ -889,7 +839,6 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/core/is_same.hpp
  /usr/local/include/boost/core/no_exceptions_support.hpp
  /usr/local/include/boost/core/noinit_adaptor.hpp
- /usr/local/include/boost/core/noncopyable.hpp
  /usr/local/include/boost/core/pointer_traits.hpp
  /usr/local/include/boost/core/ref.hpp
  /usr/local/include/boost/core/scoped_enum.hpp
@@ -1021,15 +970,12 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/iterator/detail/config_undef.hpp
  /usr/local/include/boost/iterator/detail/enable_if.hpp
  /usr/local/include/boost/iterator/detail/facade_iterator_category.hpp
- /usr/local/include/boost/iterator/distance.hpp
  /usr/local/include/boost/iterator/interoperable.hpp
  /usr/local/include/boost/iterator/iterator_adaptor.hpp
  /usr/local/include/boost/iterator/iterator_categories.hpp
- /usr/local/include/boost/iterator/iterator_concepts.hpp
  /usr/local/include/boost/iterator/iterator_facade.hpp
  /usr/local/include/boost/iterator/iterator_traits.hpp
  /usr/local/include/boost/iterator/reverse_iterator.hpp
- /usr/local/include/boost/iterator/transform_iterator.hpp
  /usr/local/include/boost/limits.hpp
  /usr/local/include/boost/make_shared.hpp
  /usr/local/include/boost/mem_fn.hpp
@@ -1371,8 +1317,6 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/predef/version_number.h
  /usr/local/include/boost/preprocessor/arithmetic/add.hpp
  /usr/local/include/boost/preprocessor/arithmetic/dec.hpp
- /usr/local/include/boost/preprocessor/arithmetic/detail/div_base.hpp
- /usr/local/include/boost/preprocessor/arithmetic/detail/is_1_number.hpp
  /usr/local/include/boost/preprocessor/arithmetic/detail/is_maximum_number.hpp
  /usr/local/include/boost/preprocessor/arithmetic/detail/is_minimum_number.hpp
  /usr/local/include/boost/preprocessor/arithmetic/detail/maximum_number.hpp
@@ -1383,7 +1327,6 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/preprocessor/arithmetic/limits/inc_1024.hpp
  /usr/local/include/boost/preprocessor/arithmetic/limits/inc_256.hpp
  /usr/local/include/boost/preprocessor/arithmetic/limits/inc_512.hpp
- /usr/local/include/boost/preprocessor/arithmetic/mod.hpp
  /usr/local/include/boost/preprocessor/arithmetic/sub.hpp
  /usr/local/include/boost/preprocessor/array/data.hpp
  /usr/local/include/boost/preprocessor/array/elem.hpp
@@ -1391,14 +1334,12 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/preprocessor/cat.hpp
  /usr/local/include/boost/preprocessor/comma_if.hpp
  /usr/local/include/boost/preprocessor/comparison/equal.hpp
- /usr/local/include/boost/preprocessor/comparison/less_equal.hpp
  /usr/local/include/boost/preprocessor/comparison/limits/not_equal_1024.hpp
  /usr/local/include/boost/preprocessor/comparison/limits/not_equal_256.hpp
  /usr/local/include/boost/preprocessor/comparison/limits/not_equal_512.hpp
  /usr/local/include/boost/preprocessor/comparison/not_equal.hpp
  /usr/local/include/boost/preprocessor/config/config.hpp
  /usr/local/include/boost/preprocessor/config/limits.hpp
- /usr/local/include/boost/preprocessor/control/deduce_d.hpp
  /usr/local/include/boost/preprocessor/control/detail/dmc/while.hpp
  /usr/local/include/boost/preprocessor/control/detail/edg/limits/while_1024.hpp
  /usr/local/include/boost/preprocessor/control/detail/edg/limits/while_256.hpp
@@ -1511,23 +1452,17 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/preprocessor/repetition/limits/repeat_512.hpp
  /usr/local/include/boost/preprocessor/repetition/repeat.hpp
  /usr/local/include/boost/preprocessor/repetition/repeat_from_to.hpp
- /usr/local/include/boost/preprocessor/seq/cat.hpp
  /usr/local/include/boost/preprocessor/seq/detail/is_empty.hpp
  /usr/local/include/boost/preprocessor/seq/detail/limits/split_1024.hpp
  /usr/local/include/boost/preprocessor/seq/detail/limits/split_256.hpp
  /usr/local/include/boost/preprocessor/seq/detail/limits/split_512.hpp
  /usr/local/include/boost/preprocessor/seq/detail/split.hpp
  /usr/local/include/boost/preprocessor/seq/elem.hpp
- /usr/local/include/boost/preprocessor/seq/enum.hpp
  /usr/local/include/boost/preprocessor/seq/first_n.hpp
  /usr/local/include/boost/preprocessor/seq/fold_left.hpp
- /usr/local/include/boost/preprocessor/seq/for_each_i.hpp
  /usr/local/include/boost/preprocessor/seq/limits/elem_1024.hpp
  /usr/local/include/boost/preprocessor/seq/limits/elem_256.hpp
  /usr/local/include/boost/preprocessor/seq/limits/elem_512.hpp
- /usr/local/include/boost/preprocessor/seq/limits/enum_1024.hpp
- /usr/local/include/boost/preprocessor/seq/limits/enum_256.hpp
- /usr/local/include/boost/preprocessor/seq/limits/enum_512.hpp
  /usr/local/include/boost/preprocessor/seq/limits/fold_left_1024.hpp
  /usr/local/include/boost/preprocessor/seq/limits/fold_left_256.hpp
  /usr/local/include/boost/preprocessor/seq/limits/fold_left_512.hpp
@@ -1538,7 +1473,6 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/preprocessor/seq/seq.hpp
  /usr/local/include/boost/preprocessor/seq/size.hpp
  /usr/local/include/boost/preprocessor/seq/subseq.hpp
- /usr/local/include/boost/preprocessor/seq/transform.hpp
  /usr/local/include/boost/preprocessor/slot/detail/def.hpp
  /usr/local/include/boost/preprocessor/slot/slot.hpp
  /usr/local/include/boost/preprocessor/stringize.hpp
@@ -1561,39 +1495,6 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/preprocessor/variadic/limits/size_256.hpp
  /usr/local/include/boost/preprocessor/variadic/limits/size_64.hpp
  /usr/local/include/boost/preprocessor/variadic/size.hpp
- /usr/local/include/boost/range/algorithm/equal.hpp
- /usr/local/include/boost/range/as_literal.hpp
- /usr/local/include/boost/range/begin.hpp
- /usr/local/include/boost/range/concepts.hpp
- /usr/local/include/boost/range/config.hpp
- /usr/local/include/boost/range/const_iterator.hpp
- /usr/local/include/boost/range/detail/common.hpp
- /usr/local/include/boost/range/detail/extract_optional_type.hpp
- /usr/local/include/boost/range/detail/has_member_size.hpp
- /usr/local/include/boost/range/detail/implementation_help.hpp
- /usr/local/include/boost/range/detail/misc_concept.hpp
- /usr/local/include/boost/range/detail/msvc_has_iterator_workaround.hpp
- /usr/local/include/boost/range/detail/safe_bool.hpp
- /usr/local/include/boost/range/detail/sfinae.hpp
- /usr/local/include/boost/range/detail/str_types.hpp
- /usr/local/include/boost/range/difference_type.hpp
- /usr/local/include/boost/range/distance.hpp
- /usr/local/include/boost/range/empty.hpp
- /usr/local/include/boost/range/end.hpp
- /usr/local/include/boost/range/functions.hpp
- /usr/local/include/boost/range/has_range_iterator.hpp
- /usr/local/include/boost/range/iterator.hpp
- /usr/local/include/boost/range/iterator_range.hpp
- /usr/local/include/boost/range/iterator_range_core.hpp
- /usr/local/include/boost/range/iterator_range_io.hpp
- /usr/local/include/boost/range/mutable_iterator.hpp
- /usr/local/include/boost/range/range_fwd.hpp
- /usr/local/include/boost/range/rbegin.hpp
- /usr/local/include/boost/range/rend.hpp
- /usr/local/include/boost/range/reverse_iterator.hpp
- /usr/local/include/boost/range/size.hpp
- /usr/local/include/boost/range/size_type.hpp
- /usr/local/include/boost/range/value_type.hpp
  /usr/local/include/boost/ratio/config.hpp
  /usr/local/include/boost/ratio/detail/mpl/abs.hpp
  /usr/local/include/boost/ratio/detail/mpl/gcd.hpp
@@ -1874,7 +1775,6 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/type_traits/common_type.hpp
  /usr/local/include/boost/type_traits/composite_traits.hpp
  /usr/local/include/boost/type_traits/conditional.hpp
- /usr/local/include/boost/type_traits/conversion_traits.hpp
  /usr/local/include/boost/type_traits/copy_cv.hpp
  /usr/local/include/boost/type_traits/cv_traits.hpp
  /usr/local/include/boost/type_traits/decay.hpp
@@ -1971,15 +1871,11 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/type_traits/remove_volatile.hpp
  /usr/local/include/boost/type_traits/type_identity.hpp
  /usr/local/include/boost/type_traits/type_with_alignment.hpp
- /usr/local/include/boost/utility.hpp
  /usr/local/include/boost/utility/addressof.hpp
- /usr/local/include/boost/utility/base_from_member.hpp
- /usr/local/include/boost/utility/binary.hpp
  /usr/local/include/boost/utility/compare_pointees.hpp
  /usr/local/include/boost/utility/declval.hpp
  /usr/local/include/boost/utility/detail/result_of_iterate.hpp
  /usr/local/include/boost/utility/enable_if.hpp
- /usr/local/include/boost/utility/identity_type.hpp
  /usr/local/include/boost/utility/result_of.hpp
  /usr/local/include/boost/utility/swap.hpp
  /usr/local/include/boost/version.hpp
@@ -2011,3 +1907,12 @@ CMakeFiles/websocketppdemo.dir/main.cpp.o
  /usr/local/include/boost/winapi/timers.hpp
  /usr/local/include/boost/winapi/wait.hpp
  /usr/local/include/boost/winapi/wait_constants.hpp
+ /usr/local/include/json/allocator.h
+ /usr/local/include/json/config.h
+ /usr/local/include/json/forwards.h
+ /usr/local/include/json/json.h
+ /usr/local/include/json/json_features.h
+ /usr/local/include/json/reader.h
+ /usr/local/include/json/value.h
+ /usr/local/include/json/version.h
+ /usr/local/include/json/writer.h

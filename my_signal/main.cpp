@@ -1,7 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <cstdlib>
 #include <signal.h> /*for signal() and raise()*/
+
+#include <iostream>
+#include <csignal>
+#include <unistd.h>
 
 void hello(int signum){
     printf("Hello World!\n");
@@ -12,6 +15,7 @@ int main(){
 
 //  signal(SIGKILL, hello);
   signal(SIGINT, hello);
+    sleep(1);
 
     while (1);
 }

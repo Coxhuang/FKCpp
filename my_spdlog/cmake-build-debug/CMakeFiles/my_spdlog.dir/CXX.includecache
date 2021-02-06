@@ -556,30 +556,6 @@ spdlog/sinks/sink.h
 base_sink-inl.h
 ../tlog/include/spdlog/sinks/base_sink-inl.h
 
-../tlog/include/spdlog/sinks/basic_file_sink-inl.h
-spdlog/sinks/basic_file_sink.h
--
-spdlog/common.h
--
-spdlog/details/os.h
--
-
-../tlog/include/spdlog/sinks/basic_file_sink.h
-spdlog/details/file_helper.h
--
-spdlog/details/null_mutex.h
--
-spdlog/sinks/base_sink.h
--
-spdlog/details/synchronous_factory.h
--
-mutex
--
-string
--
-basic_file_sink-inl.h
-../tlog/include/spdlog/sinks/basic_file_sink-inl.h
-
 ../tlog/include/spdlog/sinks/daily_file_sink.h
 spdlog/common.h
 -
@@ -755,6 +731,8 @@ tlog/src/tlog.h
 /Users/cox/Documents/GitHub/FKCpp/my_spdlog/tlog/src/tlog.h
 tlog/src/log.hpp
 /Users/cox/Documents/GitHub/FKCpp/my_spdlog/tlog/src/log.hpp
+vector
+-
 
 /Users/cox/Documents/GitHub/FKCpp/my_spdlog/tlog/src/log.hpp
 climits
@@ -775,8 +753,6 @@ spdlog/sinks/rotating_file_sink.h
 /Users/cox/Documents/GitHub/FKCpp/my_spdlog/tlog/src/spdlog/sinks/rotating_file_sink.h
 spdlog/sinks/daily_file_sink.h
 /Users/cox/Documents/GitHub/FKCpp/my_spdlog/tlog/src/spdlog/sinks/daily_file_sink.h
-spdlog/sinks/basic_file_sink.h
-/Users/cox/Documents/GitHub/FKCpp/my_spdlog/tlog/src/spdlog/sinks/basic_file_sink.h
 
 /Users/cox/Documents/GitHub/FKCpp/my_spdlog/tlog/src/tlog.h
 iostream

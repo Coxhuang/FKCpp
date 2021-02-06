@@ -30,12 +30,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56060800-77c5-4611-98d4-bd61f731084e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1.first_demo/demo/build/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.cmake_demo/demo1/built/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/2.cmake_demo/demo1/built/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsoncppdemo/cmake-build-debug/CMakeFiles/jsoncppdemo.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/jsoncppdemo/cmake-build-debug/CMakeFiles/jsoncppdemo.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsoncppdemo/cmake-build-debug/CMakeFiles/jsoncppdemo.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsoncppdemo/cmake-build-debug/jsoncppdemo" beforeDir="false" afterPath="$PROJECT_DIR$/jsoncppdemo/cmake-build-debug/jsoncppdemo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsoncppdemo/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/jsoncppdemo/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_signal/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/my_signal/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_spdlog/cmake-build-debug/CMakeFiles/my_spdlog.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/my_spdlog/cmake-build-debug/CMakeFiles/my_spdlog.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_spdlog/cmake-build-debug/CMakeFiles/my_spdlog.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/my_spdlog/cmake-build-debug/CMakeFiles/my_spdlog.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_spdlog/cmake-build-debug/CMakeFiles/my_spdlog.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/my_spdlog/cmake-build-debug/CMakeFiles/my_spdlog.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_spdlog/cmake-build-debug/CMakeFiles/my_spdlog.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_spdlog/cmake-build-debug/my_spdlog" beforeDir="false" afterPath="$PROJECT_DIR$/my_spdlog/cmake-build-debug/my_spdlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_spdlog/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/my_spdlog/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_spdlog/tlog/src/log.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/my_spdlog/tlog/src/log.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/cmake-build-debug/CMakeFiles/test.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/test/cmake-build-debug/CMakeFiles/test.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/cmake-build-debug/test" beforeDir="false" afterPath="$PROJECT_DIR$/test/cmake-build-debug/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/CMakeFiles/websocketppdemo.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/websocketppdemo" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/websocketppdemo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/websocketppdemo.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/cmake-build-debug/websocketppdemo.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/src/ws.cc" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/src/ws.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketppdemo/src/ws.h" beforeDir="false" afterPath="$PROJECT_DIR$/websocketppdemo/src/ws.h" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,9 +87,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
   <component name="ProjectId" id="1go4I2rKg64dXz8ZigMVGxijXZf" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FKCpp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -74,13 +130,25 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
-  <component name="RunManager" selected="CMake Application.demo_exe">
-    <configuration name="Clion_demo" type="CMakeRunConfiguration" factoryName="Application" singleton="false" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/1.first_demo/Clion_demo" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/1.first_demo/Clion_demo/cmake-build-debug/Clion_demo" EXPLICIT_BUILD_TARGET_NAME="all">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="demo" TARGET_NAME="demo_exe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="demo" RUN_TARGET_NAME="demo_exe">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="demo" TARGET_NAME="demo_exe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="demo" RUN_TARGET_NAME="demo_exe">
+    <configuration name="Clion_demo" type="CMakeRunConfiguration" factoryName="Application" singleton="false" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/1.first_demo/Clion_demo" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/1.first_demo/Clion_demo/cmake-build-debug/Clion_demo" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -90,10 +158,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="CMake Application.Clion_demo" />
-      <item itemvalue="CMake Application.demo_exe" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -111,23 +175,69 @@
       <workItem from="1599183237653" duration="391000" />
       <workItem from="1599440779557" duration="185000" />
       <workItem from="1599665499271" duration="2000" />
+      <workItem from="1611473244714" duration="14000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960506" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598775831622">

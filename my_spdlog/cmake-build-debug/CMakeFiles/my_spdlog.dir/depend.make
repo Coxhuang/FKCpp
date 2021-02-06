@@ -42,8 +42,6 @@ CMakeFiles/my_spdlog.dir/main.cpp.o: ../tlog/include/spdlog/sinks/ansicolor_sink
 CMakeFiles/my_spdlog.dir/main.cpp.o: ../tlog/include/spdlog/sinks/ansicolor_sink.h
 CMakeFiles/my_spdlog.dir/main.cpp.o: ../tlog/include/spdlog/sinks/base_sink-inl.h
 CMakeFiles/my_spdlog.dir/main.cpp.o: ../tlog/include/spdlog/sinks/base_sink.h
-CMakeFiles/my_spdlog.dir/main.cpp.o: ../tlog/include/spdlog/sinks/basic_file_sink-inl.h
-CMakeFiles/my_spdlog.dir/main.cpp.o: ../tlog/include/spdlog/sinks/basic_file_sink.h
 CMakeFiles/my_spdlog.dir/main.cpp.o: ../tlog/include/spdlog/sinks/daily_file_sink.h
 CMakeFiles/my_spdlog.dir/main.cpp.o: ../tlog/include/spdlog/sinks/rotating_file_sink-inl.h
 CMakeFiles/my_spdlog.dir/main.cpp.o: ../tlog/include/spdlog/sinks/rotating_file_sink.h

@@ -113,6 +113,10 @@ int main( int argc, char * argv[] ){
 ////    time_t myt2=time(NULL);
 //    std::cout<<"myt is :"<<time(NULL)+3<<std::endl;
 
+//    int p[20 * 20] = {-1};   // [0,100]
+//
+//    p[10] = 100;
+    std::vector<signed char> a(200,-1);
 
 
 

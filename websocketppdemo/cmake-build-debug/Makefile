@@ -143,6 +143,19 @@ websocketppdemo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/websocketppdemo.dir/build.make CMakeFiles/websocketppdemo.dir/build
 .PHONY : websocketppdemo/fast
 
+#=============================================================================
+# Target rules for targets named ws
+
+# Build rule for target.
+ws: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ws
+.PHONY : ws
+
+# fast build rule for target.
+ws/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ws.dir/build.make CMakeFiles/ws.dir/build
+.PHONY : ws/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -170,6 +183,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/websocketppdemo.dir/build.make CMakeFiles/websocketppdemo.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/ws.o: src/ws.cc.o
+
+.PHONY : src/ws.o
+
+# target to build an object file
+src/ws.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ws.dir/build.make CMakeFiles/ws.dir/src/ws.cc.o
+.PHONY : src/ws.cc.o
+
+src/ws.i: src/ws.cc.i
+
+.PHONY : src/ws.i
+
+# target to preprocess a source file
+src/ws.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ws.dir/build.make CMakeFiles/ws.dir/src/ws.cc.i
+.PHONY : src/ws.cc.i
+
+src/ws.s: src/ws.cc.s
+
+.PHONY : src/ws.s
+
+# target to generate assembly for a file
+src/ws.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ws.dir/build.make CMakeFiles/ws.dir/src/ws.cc.s
+.PHONY : src/ws.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,9 +219,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... websocketppdemo"
+	@echo "... ws"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/ws.o"
+	@echo "... src/ws.i"
+	@echo "... src/ws.s"
 .PHONY : help
 
 

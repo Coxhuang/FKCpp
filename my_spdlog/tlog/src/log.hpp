@@ -32,7 +32,22 @@ public:
         return this->logger_;
     }
 
-private:
+    static std::shared_ptr<TLogger> get_instance(){
+
+        if (TLogger::_ins == nullptr){
+            std::lock_guard<std::mutex> _(log_mutex_);
+            if (TLogger::_ins == nullptr){
+                TLogger::_ins = std::make_shared<TLogger>();
+            } else {}
+        } else {}
+        return TLogger::_ins;
+    }
+
+public:
+
+    static std::shared_ptr<TLogger> _ins;
+    static std::mutex log_mutex_;
+
     TLogger() {
         this->init();
     }
@@ -48,7 +63,7 @@ private:
     }
 
     void init_file(){
-        this->log_root_path = "/var/log/trunk/brainshell";
+        this->log_root_path = "../";
         this->info_file_path = "bshell_info.log";
         this->error_file_path = "bshell_erro.log";
         this->rotation_h = 5;
@@ -88,7 +103,12 @@ private:
 }; // TLogger
 
 
+std::shared_ptr<TLogger> TLogger::_ins = nullptr;
+std::mutex TLogger::log_mutex_; // static
+
+
 #define log TLogger::instance().get_logger()
+//#define log TLogger::get_instance()->get_logger()
 
 
 ////#define LDebug(...) TLogger::instance().GetLogger()->debug(__VA_ARGS__)

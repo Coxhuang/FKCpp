@@ -25,9 +25,9 @@ target_link_libraries(hellolibrary
         protobuf::libprotobuf # 将protobuf加到hellolibrary, 因为在hellolibrary 使用了protobuf
         )
 
-add_executable(server_bin main.cpp)
+add_executable(server_async_bin main.cpp)
 
-target_link_libraries(server_bin
+target_link_libraries(server_async_bin
         ${GRPCPP_LIBRARIES}
         hellolibrary
         )

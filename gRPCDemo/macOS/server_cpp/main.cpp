@@ -31,17 +31,9 @@ using helloworld::HelloMessage; // MathRequest
 using helloworld::Reply; // MathReply
 
 class HelloServiceImplementation final : public TestServer::Service {
-    Status hello_request(
-            ServerContext* context,
-            const HelloMessage* request,
-            Reply* reply
-    ) override {
+    Status hello_request(ServerContext* context,const HelloMessage* request,Reply* reply) override {
         std::cout << "hello_request ... " << std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(3000)); // 休眠
-//        time_t start_time = time(NULL); // 当前时间戳 秒级
-//        while (start_time+3 >= time(NULL)) {
-//
-//        }
         std::cout << "hello_request ... " << std::endl;
         int a = request->a();
         int b = request->b();
@@ -49,11 +41,7 @@ class HelloServiceImplementation final : public TestServer::Service {
         return Status::OK;
     }
 
-    Status hello_test(
-            ServerContext* context,
-            const HelloMessage* request,
-            Reply* reply
-    ) override {
+    Status hello_test(ServerContext* context,const HelloMessage* request,Reply* reply) override {
         std::cout << "hello_test ... " << std::endl;
         int a = request->a();
         int b = request->b();
