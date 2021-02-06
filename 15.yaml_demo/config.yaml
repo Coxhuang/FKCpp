@@ -3,5 +3,5 @@ sex: male
 age: 18
 
 skills:
-  C++: 1
-  Python: 1
+  C++: true
+  Python: true
