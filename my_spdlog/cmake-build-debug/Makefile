@@ -170,33 +170,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_spdlog.dir/build.make CMakeFiles/my_spdlog.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tlog/src/tlog.o: tlog/src/tlog.cc.o
-
-.PHONY : tlog/src/tlog.o
-
-# target to build an object file
-tlog/src/tlog.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_spdlog.dir/build.make CMakeFiles/my_spdlog.dir/tlog/src/tlog.cc.o
-.PHONY : tlog/src/tlog.cc.o
-
-tlog/src/tlog.i: tlog/src/tlog.cc.i
-
-.PHONY : tlog/src/tlog.i
-
-# target to preprocess a source file
-tlog/src/tlog.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_spdlog.dir/build.make CMakeFiles/my_spdlog.dir/tlog/src/tlog.cc.i
-.PHONY : tlog/src/tlog.cc.i
-
-tlog/src/tlog.s: tlog/src/tlog.cc.s
-
-.PHONY : tlog/src/tlog.s
-
-# target to generate assembly for a file
-tlog/src/tlog.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_spdlog.dir/build.make CMakeFiles/my_spdlog.dir/tlog/src/tlog.cc.s
-.PHONY : tlog/src/tlog.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -209,9 +182,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... tlog/src/tlog.o"
-	@echo "... tlog/src/tlog.i"
-	@echo "... tlog/src/tlog.s"
 .PHONY : help
 
 

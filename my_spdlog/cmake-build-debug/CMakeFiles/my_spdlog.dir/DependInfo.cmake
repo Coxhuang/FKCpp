@@ -5,13 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/cox/Documents/GitHub/FKCpp/my_spdlog/main.cpp" "/Users/cox/Documents/GitHub/FKCpp/my_spdlog/cmake-build-debug/CMakeFiles/my_spdlog.dir/main.cpp.o"
-  "/Users/cox/Documents/GitHub/FKCpp/my_spdlog/tlog/src/tlog.cc" "/Users/cox/Documents/GitHub/FKCpp/my_spdlog/cmake-build-debug/CMakeFiles/my_spdlog.dir/tlog/src/tlog.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../tlog/include"
+  "../include"
   )
 
 # Targets to which this target links.

@@ -3,6 +3,6 @@ project(my_spdlog)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(tlog/include)
+include_directories(include)
 
-add_executable(my_spdlog main.cpp tlog/src/tlog.cc tlog/src/tlog.h)
+add_executable(my_spdlog main.cpp)

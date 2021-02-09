@@ -94,12 +94,12 @@ clean: CMakeFiles/my_spdlog.dir/clean
 CMakeFiles/my_spdlog.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_spdlog.dir/build.make CMakeFiles/my_spdlog.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_spdlog.dir/build.make CMakeFiles/my_spdlog.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cox/Documents/GitHub/FKCpp/my_spdlog/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target my_spdlog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cox/Documents/GitHub/FKCpp/my_spdlog/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target my_spdlog"
 .PHONY : CMakeFiles/my_spdlog.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/my_spdlog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/my_spdlog/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/my_spdlog/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_spdlog.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cox/Documents/GitHub/FKCpp/my_spdlog/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/my_spdlog.dir/rule
